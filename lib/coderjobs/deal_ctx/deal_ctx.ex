@@ -17,8 +17,11 @@ defmodule Coderjobs.DealCtx do
       [%Deal{}, ...]
 
   """
-  def list_deals do
-    Repo.all(Deal)
+  def list_deals(params) do
+    search_term= get_in(params, ["query"])
+    Deal
+    |> Deal.search(search_term)
+    |> Repo.all()
   end
 
   @doc """

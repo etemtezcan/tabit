@@ -22,7 +22,10 @@
     <%= render "nav.html", assigns %>
     <div class="container">
     <br><br><br><br><br><br>
-
+    <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Search" %>
+    <% end %>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>

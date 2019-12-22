@@ -122,7 +122,7 @@ defmodule CoderjobsWeb.DealController do
   end
 
   def all(conn, params \\ %{}) do
-      deals = DealCtx.list_deals()
+      deals = DealCtx.list_deals(params)
       render(conn, "all.html", deals: deals)
     end
   

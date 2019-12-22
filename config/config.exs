@@ -34,7 +34,9 @@ config :guardian_db, GuardianDb,
   repo: Coderjobs.Repo,
   schema_name: "guardian_tokens"
 
-config :bcrypt_elixir, :log_rounds, 4
+config :rummage_ecto, Rummage.ECto, 
+   default_repo: Coderjobs.Repo,
+   default_per_page: 2 
 
 # In your config/config.exs file
 config :coderjobs, Coderjobs.Mailer,
