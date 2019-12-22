@@ -29,9 +29,9 @@
                   id="password" 
                   placeholder="Şifre" />
               </div>
-              <button type="submit" class="btn btn-primary btn-block btn-lg">Bağlan</button>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
               <br/>
-              <p><a href="/forgot">Şifremi Unuttum</a> veya <a href="/register">Kaydolun</a></p>
+              <p><a href="/forgot">Forgot password</a> veya <a href="/register">Register</a></p>
             </form>
           </div>
         </div>

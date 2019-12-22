@@ -1,5 +1,5 @@
 <br><br><br><br><br><br>
-<h2>Fırsat Tanımla</h2>
+<h2> <%= gettext "Edit Deal" %></h2>
 
 <%= render "form.html", Map.put(assigns, :action, deal_path(@conn, :create)) %>
 

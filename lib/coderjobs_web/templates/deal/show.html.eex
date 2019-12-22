@@ -1,4 +1,4 @@
-<h2>Kampanya Detayları</h2>
+<h2><%= gettext "Deal Details"%></h2>
 
 <ul>
 

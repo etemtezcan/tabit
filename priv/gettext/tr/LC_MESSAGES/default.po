@@ -1,0 +1,53 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: tr\n"
+
+#: lib/coderjobs_web/templates/deal/all.html.eex:1
+msgid "All Deals"
+msgstr "Bütün Fırsatlar"
+
+#: lib/coderjobs_web/templates/layout/nav.html.eex:21
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: lib/coderjobs_web/templates/layout/nav.html.eex:24
+msgid "Contact Us"
+msgstr "Bize Yazın"
+
+#: lib/coderjobs_web/templates/deal/show.html.eex:1
+msgid "Deal Details"
+msgstr "Fırsat Detayları"
+
+#: lib/coderjobs_web/templates/layout/nav.html.eex:27
+msgid "Deals"
+msgstr "Bütün Fırsatlar"
+
+#: lib/coderjobs_web/templates/deal/edit.html.eex:1
+#: lib/coderjobs_web/templates/deal/new.html.eex:2
+msgid "Edit Deal"
+msgstr "Fırsat Düzenle"
+
+#: lib/coderjobs_web/templates/deal/index.html.eex:1
+#: lib/coderjobs_web/templates/layout/nav.html.eex:17
+msgid "My Deals"
+msgstr "Fırsatlarım"
+
+#: lib/coderjobs_web/templates/deal/index.html.eex:35
+msgid "Delete"
+msgstr "Sil"
+
+#: lib/coderjobs_web/templates/deal/index.html.eex:34
+msgid "Edit"
+msgstr "Düzenle"
+
+#: lib/coderjobs_web/templates/deal/index.html.eex:33
+msgid "Show"
+msgstr "Göster"

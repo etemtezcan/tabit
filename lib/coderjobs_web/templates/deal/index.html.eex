@@ -1,4 +1,4 @@
-<h2> Fırsatlarım</h2>
+<h2> <%= gettext "My Deals" %></h2>
 
 <table class="table">
   <thead>
@@ -30,9 +30,9 @@
       
 
       <td class="text-right">
-        <span><%= link "Göster", to: deal_path(@conn, :show, deal), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Düzenle", to: deal_path(@conn, :edit, deal), class: "btn btn-default btn-xs" %></span>
-        <a href="/deals/destroy/<%= deal.id %>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-xs">Delete </a>
+        <span><%= link (gettext "Show"), to: deal_path(@conn, :show, deal), class: "btn btn-default btn-xs" %></span>
+        <span><%= link (gettext "Edit"), to: deal_path(@conn, :edit, deal), class: "btn btn-default btn-xs" %></span>
+        <a href="/deals/destroy/<%= deal.id %>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-xs"> <%= gettext "Delete"%> </a>
       </td>
 
     </tr>

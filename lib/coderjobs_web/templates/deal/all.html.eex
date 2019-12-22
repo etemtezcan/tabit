@@ -1,4 +1,9 @@
-<h2> Kayıtlı Bazı Fırsatlar</h2>
+<h2> <%= gettext "All Deals" %> </h2>
+
+<%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Search" %>
+    <% end %>
 
 <table class="table">
   <thead>
