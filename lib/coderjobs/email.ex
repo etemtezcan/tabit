@@ -8,12 +8,12 @@ defmodule Coderjobs.Email do
   alias CoderjobsWeb.Endpoint
 
   @base_layout "email.html"
-  @mail_from "John Dave Decano<info@coderjobs.ph>"
-  @mail_reply_to "editors@coderjobs.ph"
+  @mail_from "Rasteda Elektronik <info@rasteda.com>"
+  @mail_reply_to "info@rasteda.com"
   
-  @message_subject_welcome "Welcome to CoderJobs.ph"
-  @message_subject_reset "Password Reset"
-  @message_subject_contact "Contact Form"
+  @message_subject_welcome "Sanayi Fırsatına Hoşgeldiniz "
+  @message_subject_reset "Şifre Sıfırlama"
+  @message_subject_contact "İletişim Formu"
   @message_subject_application "Job Application"
 
   def welcome_email(user) do

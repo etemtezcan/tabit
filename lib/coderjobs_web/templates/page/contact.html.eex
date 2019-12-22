@@ -2,10 +2,9 @@
   <div class="row">
     <div class="col-md-8 left">
       <div class="content-inner">
-        <h3>Contact Us</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius, ex ac euismod suscipit.
-        </p>
+        <h3>Bize Yazın</h3>
+        <p>  Sanayi Fırsatı hakkındaki görüş ve önerileriniz için. </p>
+<!--
              <%= form_for @changeset, page_path(@conn, :contact_post), fn f -> %>
 
               <%= if @changeset.action do %>
@@ -15,40 +14,38 @@
               <% end %>
 
             <div class="form-group">
-              <%= twbs4_text_input_tag f, :name, placeholder: "Name", required: true %>
+              <%= twbs4_text_input_tag f, :name, placeholder: "Adınız", required: true %>
               <%= twbs4_error_tag f, :name %>
             </div>
 
               <div class="form-group">
-                <%= twbs4_text_input_tag f, :email, placeholder: "Email", type: "email", required: true %>
+                <%= twbs4_text_input_tag f, :email, placeholder: "E-postanız", type: "email", required: true %>
                 <%= twbs4_error_tag f, :email %>
               </div>
 
               <div class="form-group">
-                <%= twbs4_textarea_tag f, :message, placeholder: "Your message", required: true, class: "contact-message" %>
+                <%= twbs4_textarea_tag f, :message, placeholder: "Görüşleriniz", required: true, class: "contact-message" %>
                 <%= twbs4_error_tag f, :message %>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Mesaj Gönder</button>  -->
             <% end %>
         <br />
         <table class="table">
           <tbody>
             <tr>
-              <td><strong>Address</strong></td>
-              <td>144-3 West Bank Floodway Road Maybunga Pasig City</td>
+            <!--
+              <td><strong>Adres</strong></td>
+              <td>Beytepe Mah. 1804 Sk. No:26 Çankaya/ Ankara</td> 
+            -->
             </tr>
             <tr>
-              <td><strong>Email Address</strong></td>
-              <td>info@coderjobs.ph</td>
+              <td><strong>E-posta</strong></td>
+              <td>info@rasteda.com</td>
             </tr>
             <tr>
-              <td><strong>Phone</strong></td>
-              <td>+629292923507</td>
-            </tr>
-            <tr>
-              <td><strong>Github</strong></td>
-              <td><a href="http://github.com/johndavedecano" target"_blank">http://github.com/johndavedecano</a></td>
+              <td><strong>Telefon</strong></td>
+              <td>+905336942436</td>
             </tr>
           </tbody>
         </table>

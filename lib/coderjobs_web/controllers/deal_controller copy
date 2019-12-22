@@ -1,0 +1,69 @@
+defmodule CoderjobsWeb.DealController do
+  use CoderjobsWeb, :controller
+
+  alias Coderjobs.DealCtx.Deal
+  alias Coderjobs.DealCtx.DealActions
+
+  def index(conn, _params) do
+    deals = DealCtx.list_deals()
+    render(conn, "index.html", deals: deals)
+  end
+
+  def new(conn, _params) do
+    changeset = DealCtx.change_deal(%Deal{})
+    render(conn, "new.html", changeset: changeset)
+  end
+
+  def create(conn, %{"deal" => deal_params}) do
+    case DealCtx.create_deal(deal_params) do
+      {:ok, deal} ->
+        conn
+        |> put_flash(:info, "Fırsat başarıyla oluşturuldu.")
+        |> redirect(to: deal_path(conn, :show, deal))
+      {:error, %Ecto.Changeset{} = changeset} ->
+        render(conn, "new.html", changeset: changeset)
+    end
+  end
+
+  def show(conn, %{"id" => id}) do
+    user = Guardian.Plug.current_resource(conn)
+    deal = DealActions.find_by_id!(id, user)
+    render(conn, "show.html", deal: deal)
+  end
+
+
+
+  def edit(conn, %{"id" => id}) do
+    deal = DealCtx.get_deal!(id)
+    changeset = DealCtx.change_deal(deal)
+    render(conn, "edit.html", deal: deal, changeset: changeset)
+  end
+
+  def update(conn, %{"id" => id, "deal" => deal_params}) do
+    deal = DealCtx.get_deal!(id)
+
+    case DealCtx.update_deal(deal, deal_params) do
+      {:ok, deal} ->
+        conn
+        |> put_flash(:info, "Fırsat başarıyla güncellendi.")
+        |> redirect(to: deal_path(conn, :show, deal))
+      {:error, %Ecto.Changeset{} = changeset} ->
+        render(conn, "edit.html", deal: deal, changeset: changeset)
+    end
+  end
+
+  def delete(conn, %{"id" => id}) do
+    user = Guardian.Plug.current_resource(conn)
+    case DealActions.destroy(id, user) do
+      {:error, reason} ->
+        conn
+        |> put_flash(:error, reason)
+        |> redirect(to: "/deals")
+      {:ok, _} ->
+        conn
+        |> put_flash(:info, "Fırsat başarıyla silindi.")
+        |> redirect(to: "/deals")
+    end
+  end
+
+end

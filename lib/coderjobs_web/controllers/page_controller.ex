@@ -1,19 +1,19 @@
 defmodule CoderjobsWeb.PageController do
   use CoderjobsWeb, :controller
 
-  alias Coderjobs.Posts.JobActions
+  alias Coderjobs.DealCtx.DealActions
   alias Coderjobs.Others.Contact
   alias Coderjobs.Email
   alias Coderjobs.Mailer
 
   def index(conn, params \\ %{}) do
-    page = JobActions.list(params)
+    page = DealActions.list(params)
     render(conn, "index.html",
-      jobs: page.entries,
+      deals: page.entries,
       page: page,
       total: page.total_entries,
       q: Map.get(params, "q", ""),
-      location: Map.get(params, "location", ""),
+     # ,location: Map.get(params, "location", ""),
     )
   end
 

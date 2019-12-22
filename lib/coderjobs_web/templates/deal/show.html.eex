@@ -1,0 +1,38 @@
+<h2>Kampanya Detayları</h2>
+
+<ul>
+
+  <li>
+    <strong>Tanım:</strong>
+    <%= @deal.title %>
+  </li>
+
+  <li>
+    <strong>Açıklama:</strong>
+    <%= @deal.description %>
+  </li>
+
+  <li>
+    <strong>Fiyat:</strong>
+    <%= @deal.price %>
+  </li>
+
+  <li>
+    <strong>Geçerlilik Tarihi:</strong>
+    <%= @deal.valid %>
+  </li>
+
+  <li>
+    <strong>Durum:</strong>
+    <%= @deal.status %>
+  </li>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @deal.url %>
+  </li>
+
+</ul>
+
+<span><%= link "Düzenle", to: deal_path(@conn, :edit, @deal) %></span>
+<span><%= link "Geri", to: deal_path(@conn, :index) %></span>

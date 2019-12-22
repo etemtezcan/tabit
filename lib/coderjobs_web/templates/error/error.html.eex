@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Find coders jobs in the Philippines">
-    <meta name="author" content="jd@coderjobs.ph">
+    <meta name="description" content="Sanayi Fırsatlarını Yakalayın">
+    <meta name="author" content="info@rasteda.com">
     <title><%= @message %></title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-      <a class="navbar-brand" href="/">CoderJobs.PH</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="/">Sanayi Fırsatı </a>
       <button class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -50,7 +50,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">All Rights Reserved &copy; 2017 CoderJobs Philippines | <a href="/terms">Terms and Privacy</a></span>
+        <span class="text-muted">Bütün Hakları Saklıdır &copy; 2019 Sanayi Fırsatı | <a href="/terms">Kullanım Koşulları</a></span>
       </div>
     </footer>
     

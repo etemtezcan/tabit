@@ -1,0 +1,24 @@
+<h2> Kayıtlı Bazı Fırsatlar</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tanım</th>
+      <th>Açıklama</th>
+      <th>Geçerlilik Tarihi</th>
+      <th>Url</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for deal <- @deals do %>
+    <tr>
+      <td><%= deal.title %></td>
+      <td><%= deal.description %></td>
+      <td><%= deal.valid %></td>
+      <td><%= deal.url %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+

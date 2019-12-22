@@ -1,0 +1,5 @@
+<h2>Fırsat Düzenle</h2>
+
+<%= render "form.html", Map.put(assigns, :action, deal_path(@conn, :update, @deal)) %>
+
+<span><%= link "Geri", to: deal_path(@conn, :index) %></span>

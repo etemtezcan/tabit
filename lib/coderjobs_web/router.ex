@@ -68,11 +68,25 @@ defmodule CoderjobsWeb.Router do
       put "/jobs/update/:id", JobsController, :update
       post "/jobs/update/:id", JobsController, :update
       get "/jobs/destroy/:id", JobsController, :delete
+
+      # USER DEALS
+      get "/deals", DealController, :index 
+      get "/src", DealController, :src
+      get "/all", DealController, :all  
+      get "/deals/submit", DealController, :new
+      post "/deals/submit", DealController, :create
+      get "/deals/repost/:id", DealController, :repost
+      get "/deals/update/:id", DealController, :edit
+      put "/deals/update/:id", DealController, :update
+      post "/deals/update/:id", DealController, :update
+      get "/deals/destroy/:id", DealController, :delete
+      
     end
 
     get "/jobs/apply/:id", JobsApplyController, :new
     post "/jobs/apply/:id", JobsApplyController, :create
     
+    get "/deals/:id", DealController, :show
     get "/jobs/:id", JobsController, :show
     get "/company/:id", AccountController, :show
   end

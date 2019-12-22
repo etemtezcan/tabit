@@ -2,8 +2,7 @@
   <div class="row">
     <div class="col-md-8 left">
       <div class="jumbotron text-center featured">
-        <h1>Welcome To Coder Jobs</h1> 
-        <p>Find the coolest software and web development jobs near you.</p>
+        <h1>Sanayi Fırsatına Hoş geldiniz. </h1> 
       </div>
       <div class="content-inner">
         <div class="search">
@@ -15,15 +14,7 @@
                   id="inlineFormInputName2"
                   name="q"
                   value="<%= @q %>"
-                  placeholder="e.g Software Developer" />
-              </div>
-              <div class="col-5">
-                <label class="sr-only" for="inlineFormInputName2">Location</label>
-                <input type="text" class="form-control"
-                  id="inlineFormInputName2"
-                  name="location"
-                  value="<%= @location %>"
-                  placeholder="e.g Pasig City" />
+                  placeholder="örn. servo motor" />
               </div>
               <div class="col-2">
                 <button type="submit" class="btn btn-primary btn-block">Search</button>
@@ -33,37 +24,6 @@
         </div>
 
         <br />
-        <%= for job <- @jobs do %>
-        <div class="card job-list">
-          <div class="card-body">
-            <%= if job.user.company_logo do %>
-              <img class="rounded-circle float-left job-list-img" src="<%= job.user.company_logo %>">
-            <% else %>
-              <img class="rounded-circle float-left job-list-img" src="/images/default.png">
-            <% end %>
-
-            <p class="card-text job-list-location">
-              <%= if job.is_remote do %>
-              <span class="badge badge-info">Remote</span>
-              <% else %>
-              <span class="badge badge-success"><%= get_location(job.location) %></span>
-              <% end %>
-            </p>
-
-            <h5 class="card-title">
-              <%= if job.is_external do %>
-                <a href="<%= job.url %>" target="_blank">
-              <% else %>
-                <a href="/jobs/<%= job.id %>">
-              <% end %>
-              <%= job.user.company |> truncate %>
-              </a>
-            </h5>
-
-            <p class="card-subtitle mb-2 text-muted"><%= job.title |> truncate %></p>
-          </div>
-        </div>
-        <% end %>
         <%= pagination_links @page, next: "Next", previous: "Previous", view_style: :bootstrap_v4 %>
       </div>
     </div>

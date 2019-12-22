@@ -1,0 +1,6 @@
+<br><br><br><br><br><br>
+<h2>Fırsat Tanımla</h2>
+
+<%= render "form.html", Map.put(assigns, :action, deal_path(@conn, :create)) %>
+
+<span><%= link "Geri", to: deal_path(@conn, :index) %></span>

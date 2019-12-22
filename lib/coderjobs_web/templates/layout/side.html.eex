@@ -1,7 +1,7 @@
 <div class="col-md-4 right">
-  <a href="/jobs/submit" class="btn btn-primary btn-lg btn-block">Post A Job</a>
+ <!-- <a href="/deals/submit" class="btn btn-primary btn-lg btn-block">Kampanya Tanımla</a> -->
   <br/>
-  <p>CoderJobs.PH is the best place to post your software development jobs in the Philippines.</p>
+  <p>Yeni fırsatlardan haberdar olmak  için e-posta listemize kaydolun.</p>
   <br/>
 
   <div class="newsletter">

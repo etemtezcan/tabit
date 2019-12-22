@@ -4,7 +4,7 @@
       <div class="col-md-5 col-sm-12 auth-wrapper">
         <div class="card">
           <div class="auth-wrapper--inner">
-            <h4>Forgot Password</h4>
+            <h4>Şifremi unuttum</h4>
             <hr />
             <form action="/forgot" method="POST">
               <input type="hidden"
@@ -15,13 +15,13 @@
                   type="email"
                   name="email"
                   class="form-control form-control-lg"
-                  placeholder="Email Address" />
+                  placeholder="E-posta adresiniz" />
               </div>
                 <button type="submit"
-                  class="btn btn-primary btn-block btn-lg">Send Confirmation
+                  class="btn btn-primary btn-block btn-lg">Şifremi sıfırla
                 </button>
               <br/>
-              <p><a href="/login">Back To Login</a> or <a href="/register">Create New Account</a></p>
+              <p><a href="/login">Bağlanın</a> or <a href="/register">Yeni Hesap Oluşturun</a></p>
             </form>
           </div>
         </div>

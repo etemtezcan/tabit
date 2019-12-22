@@ -11,11 +11,11 @@ defmodule CoderjobsWeb.Auth.ForgotController do
     case UserAuthActions.forgot_password(email) do
       {:error, _} ->
         conn
-        |> put_flash(:error, "Invalid email address.")
+        |> put_flash(:error, "Geçersiz e-posta.")
         |> redirect(to: "/forgot")
       {:ok, user} ->
         conn
-        |> put_flash(:info, "Reset code has been successfully sent to #{user.email}.")
+        |> put_flash(:info, "Şifre sıfırlama için gereken kod  #{user.email} adresine gönderilmiştir.")
         |> redirect(to: "/login")
     end
   end

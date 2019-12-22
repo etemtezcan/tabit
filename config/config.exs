@@ -38,16 +38,20 @@ config :bcrypt_elixir, :log_rounds, 4
 
 # In your config/config.exs file
 config :coderjobs, Coderjobs.Mailer,
-  adapter: Bamboo.SMTPAdapter,
-  server: System.get_env("SMTP_HOST"),
-  hostname: System.get_env("APP_HOST"),
-  port: System.get_env("SMTP_PORT"),
-  username: System.get_env("SMTP_USER"),
-  password: System.get_env("SMTP_PASS"),
-  tls: :if_available, # can be `:always` or `:never`
-  allowed_tls_versions: [:"tlsv1", :"tlsv1.1", :"tlsv1.2"],
-  ssl: false,
-  retries: 1
+  adapter: Bamboo.MailgunAdapter,
+  api_key: "key-efe84ffffb5c5a6d1ef9312bfb4f774b",
+  domain: "mg.rasteda.com"
+
+  # adapter: Bamboo.SMTPAdapter,
+ #  server: System.get_env("SMTP_HOST"),
+  # hostname: System.get_env("APP_HOST"),
+   #port: System.get_env("SMTP_PORT"),
+ #  username: System.get_env("SMTP_USER"),
+ #  password: System.get_env("SMTP_PASS"),
+ #  tls: :if_available, # can be `:always` or `:never`
+ #  allowed_tls_versions: [:"tlsv1", :"tlsv1.1", :"tlsv1.2"],
+ #  ssl: false,
+ #  retries: 1
 
 import_config "vars.exs"
 import_config "#{Mix.env}.exs"

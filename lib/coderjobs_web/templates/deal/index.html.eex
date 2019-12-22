@@ -1,0 +1,43 @@
+<h2> Fırsatlarım</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tanım</th>
+      <th>Açıklama</th>
+      <th>Fiyat</th>
+      <th>Geçerlilik Tarihi</th>
+      <th>Durum</th>
+      <th>Url</th>
+      <th>User</th>
+      <th>User</th>
+      
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for deal <- @deals do %>
+    <tr>
+      <td><%= deal.title %></td>
+      <td><%= deal.description %></td>
+      <td><%= deal.price %></td>
+      <td><%= deal.valid %></td>
+      <td><%= deal.status %></td>
+      <td><%= deal.url %></td>
+      <td><%= deal.user_id %></td>
+
+      
+
+      <td class="text-right">
+        <span><%= link "Göster", to: deal_path(@conn, :show, deal), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: deal_path(@conn, :edit, deal), class: "btn btn-default btn-xs" %></span>
+        <a href="/deals/destroy/<%= deal.id %>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-xs">Delete </a>
+      </td>
+
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Fırsat Tanımla", to: deal_path(@conn, :new) %></span>
