@@ -85,13 +85,6 @@ defmodule Coderjobs.DealCtx.DealActions do
     end
   end
 
-  def list_search_deals(query) do
-    search_term = get_in(params, ["query"])
-    Deal
-    |> Deal.search(search_term)
-    |> Repo.all()
-  end
-
   def search(query, search_term) do
     wildcard_search = "%#{search_term}%"
 

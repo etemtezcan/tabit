@@ -126,7 +126,4 @@ defmodule CoderjobsWeb.DealController do
       render(conn, "all.html", deals: deals)
     end
   
-  def src(conn, %{"search" => %{"query" => query}}) do
-    render(conn, "src.html", results: DealActions.list_search_deals(query))
-  end  
 end

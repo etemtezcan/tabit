@@ -23,10 +23,6 @@
     <div class="container">
     <br><br><br><br><br><br>
 
-     <%= form_for @conn, search_path(@conn, :index), [method: :get, class: "pull-right"], fn f -> %>
-      <%= search_input f, :query %>
-      <%= submit "Search" %>
-    <% end %>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
