@@ -17,7 +17,7 @@ defmodule CoderjobsWeb.Auth.LoginController do
         conn
         |> Guardian.Plug.sign_in(user)
         |> put_flash(:info, "You have successfully logged in.")
-        |> redirect(to: "/deals/submit")
+        |> redirect(to: "/deals")
     end
   end
 
