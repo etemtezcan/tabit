@@ -13,7 +13,7 @@ defmodule CoderjobsWeb.Auth.RegisterController do
     case UserAuthActions.create(user_params) do
       {:ok, user} ->
         conn
-        |> put_flash(:info, "Please check your email #{user.email} to verify your account.")
+        |> put_flash(:info, gettext "Please check your email to verify your account.")
         |> redirect(to: "/")
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
@@ -25,11 +25,11 @@ defmodule CoderjobsWeb.Auth.RegisterController do
       {:ok, user} ->
         conn
         |> Guardian.Plug.sign_in(user)
-        |> put_flash(:info, "Account verification success. Please update your company details.")
+        |> put_flash(:info, gettext "Account verification success. Please update your company details.")
         |> redirect(to: "/account")
       {:error, _} ->
         conn
-        |> put_flash(:error, "Account verification failed.")
+        |> put_flash(:error, gettext "Account verification failed.")
         |> redirect(to: "/")
     end
   end  

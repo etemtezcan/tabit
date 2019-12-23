@@ -34,5 +34,5 @@
 
 </ul>
 
-<span><%= link "Düzenle", to: deal_path(@conn, :edit, @deal) %></span>
-<span><%= link "Geri", to: deal_path(@conn, :index) %></span>
+<span><%= link (gettext "Edit"), to: deal_path(@conn, :edit, @deal) %></span>
+<span><%= link (gettext "Back"), to: deal_path(@conn, :index) %></span>

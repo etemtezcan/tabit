@@ -49,20 +49,20 @@
                 <% end %>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="/account">Account Settings</a>
-                <a class="dropdown-item" href="/deals">Manage Posts</a>
-                <a class="dropdown-item" href="/logout">Logout</a>
+                <a class="dropdown-item" href="/account"> <%= gettext "Account Settings" %></a>
+                <a class="dropdown-item" href="/deals"> <%= gettext "My Deals"%></a>
+                <a class="dropdown-item" href="/logout"> <%= gettext "Logout"%></a>
               </div>
             </li>
             <% else %>
             <li class="nav-item" style="margin-right: 5px;">
               <a class="btn btn-primary" href="/login">
-                <i class="icon icon-user"></i> Login
+                <i class="icon icon-user"></i> <%= gettext "Login" %>
               </a>
             </li>
             <li class="nav-item">
               <a class="btn btn-success" href="/register">
-                <i class="icon icon-user"></i> Register
+                <i class="icon icon-user"></i> <%= gettext "Register"%>
               </a>
             </li>
           <% end %>

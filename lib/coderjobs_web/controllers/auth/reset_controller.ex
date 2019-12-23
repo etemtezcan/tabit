@@ -18,7 +18,7 @@ defmodule CoderjobsWeb.Auth.ResetController do
     case UserAuthActions.update_password(password, password_confirmation, reset_code) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Password has been successfully updated.")
+        |> put_flash(:info, gettext "Password has been successfully updated.")
         |> redirect(to: "/login")
       {:error, reason} ->
         conn

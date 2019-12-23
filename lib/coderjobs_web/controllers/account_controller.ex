@@ -28,7 +28,7 @@ defmodule CoderjobsWeb.AccountController do
     case UserAccountActions.update(user, user_params) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Account was successfully updated.")
+        |> put_flash(:info, gettext "Account was successfully updated.")
         |> redirect(to: "/account")
       {:error, changeset} ->
         render(conn, "index.html", changeset: changeset, user: user, page: "general")
@@ -46,7 +46,7 @@ defmodule CoderjobsWeb.AccountController do
     case UserAccountActions.update_password(user, user_params) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Account password was successfully updated.")
+        |> put_flash(:info, gettext "Account password was successfully updated.")
         |> redirect(to: "/account/password")
       {:error, changeset} ->
         render(conn, "password.html", changeset: changeset, page: "password")

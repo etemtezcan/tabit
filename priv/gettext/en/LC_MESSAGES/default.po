@@ -19,6 +19,7 @@ msgid "About Us"
 msgstr ""
 
 #: lib/coderjobs_web/templates/layout/nav.html.eex:24
+#: lib/coderjobs_web/templates/page/contact.html.eex:5
 msgid "Contact Us"
 msgstr ""
 
@@ -27,11 +28,11 @@ msgid "Deal Details"
 msgstr ""
 
 #: lib/coderjobs_web/templates/layout/nav.html.eex:27
+#: lib/coderjobs_web/templates/layout/nav.html.eex:53
 msgid "Deals"
 msgstr ""
 
 #: lib/coderjobs_web/templates/deal/edit.html.eex:1
-#: lib/coderjobs_web/templates/deal/new.html.eex:2
 msgid "Edit Deal"
 msgstr ""
 
@@ -45,9 +46,150 @@ msgid "Delete"
 msgstr ""
 
 #: lib/coderjobs_web/templates/deal/index.html.eex:34
+#: lib/coderjobs_web/templates/deal/show.html.eex:37
 msgid "Edit"
 msgstr ""
 
 #: lib/coderjobs_web/templates/deal/index.html.eex:33
 msgid "Show"
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/forgot_controller.ex:18
+msgid "Account reset code has been sent to user e-mail."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:79
+msgid "Cannot find deal."
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/reset/new.html.eex:35
+msgid "Create New Account"
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:46
+msgid "Deal created."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:64
+msgid "Deal reposted."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:98
+msgid "Deal updated."
+msgstr ""
+
+#: lib/coderjobs_web/templates/page/about.html.eex:16
+msgid "Explanation for web site."
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/forgot/new.html.eex:7
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:34
+msgid "Forgot password"
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/forgot_controller.ex:14
+msgid "Invalid e-mail address."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:68
+msgid "Invalid operation."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/login_controller.ex:14
+msgid "Invalid username or password."
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:32
+#: lib/coderjobs_web/templates/layout/nav.html.eex:60
+msgid "Login"
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:10
+msgid "Login Credentials"
+msgstr ""
+
+#: lib/coderjobs_web/controllers/page_controller.ex:40
+msgid "Message Sent."
+msgstr ""
+
+#: lib/coderjobs_web/templates/deal/new.html.eex:2
+msgid "New Deal"
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/reset/new.html.eex:7
+msgid "Reset Password"
+msgstr ""
+
+#: lib/coderjobs_web/templates/page/terms.html.eex:5
+msgid "Terms and Conditions"
+msgstr ""
+
+#: lib/coderjobs_web/templates/page/about.html.eex:5
+msgid "Title for web site"
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/login_controller.ex:19
+msgid "You have successfully logged in."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/login_controller.ex:27
+msgid "You have successfully logged out."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/account_controller.ex:49
+msgid "Account password was successfully updated."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/register_controller.ex:32
+msgid "Account verification failed."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/register_controller.ex:28
+msgid "Account verification success. Please update your company details."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/account_controller.ex:31
+msgid "Account was successfully updated."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/deal_controller.ex:119
+msgid "Deal was successfully deleted."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/reset_controller.ex:21
+msgid "Password has been successfully updated."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/register_controller.ex:16
+msgid "Please check your email to verify your account."
+msgstr ""
+
+#: lib/coderjobs_web/controllers/auth/auth_handler.ex:7
+#: lib/coderjobs_web/controllers/auth/auth_handler.ex:13
+msgid "You must be signed in to access this page"
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:5
+msgid "Trial Account Credentials:"
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:6
+msgid "e-mail=deneme@deneme.com, password=deneme"
+msgstr ""
+
+#: lib/coderjobs_web/templates/auth/login/new.html.eex:34
+#: lib/coderjobs_web/templates/layout/nav.html.eex:65
+msgid "Register"
+msgstr ""
+
+#: lib/coderjobs_web/templates/deal/show.html.eex:38
+msgid "Back"
+msgstr ""
+
+#: lib/coderjobs_web/templates/layout/nav.html.eex:52
+msgid "Account Settings"
+msgstr ""
+
+#: lib/coderjobs_web/templates/layout/nav.html.eex:54
+msgid "Logout"
 msgstr ""

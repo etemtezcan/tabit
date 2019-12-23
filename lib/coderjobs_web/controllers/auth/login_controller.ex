@@ -11,12 +11,12 @@ defmodule CoderjobsWeb.Auth.LoginController do
     case UserAuthActions.login(email, password) do
       {:error, _} ->
         conn
-        |> put_flash(:error, "Invalid username or password.")
+        |> put_flash(:error, gettext "Invalid username or password.")
         |> redirect(to: "/login")
       {:ok, user} ->
         conn
         |> Guardian.Plug.sign_in(user)
-        |> put_flash(:info, "You have successfully logged in.")
+        |> put_flash(:info, gettext "You have successfully logged in.")
         |> redirect(to: "/deals")
     end
   end
@@ -24,7 +24,7 @@ defmodule CoderjobsWeb.Auth.LoginController do
   def delete(conn, _params) do
     conn
     |> Guardian.Plug.sign_out
-    |> put_flash(:info, "You have successfully logged out.")
+    |> put_flash(:info, gettext "You have successfully logged out.")
     |> redirect(to: "/login")
   end
 end

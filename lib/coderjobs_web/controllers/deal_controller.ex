@@ -43,7 +43,7 @@ defmodule CoderjobsWeb.DealController do
     case DealActions.create(deal_params, user.id) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Fırsat başarıyla kaydedildi.")
+        |> put_flash(:info, gettext "Deal created.")
         |> redirect(to: "/deals")
       {:error, changeset} ->
         render conn, "new.html",
@@ -61,11 +61,11 @@ defmodule CoderjobsWeb.DealController do
     case DealActions.repost(deal) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Fırsat yeniden kaydedildi.")
+        |> put_flash(:info, gettext "Deal reposted.")
         |> redirect(to: "/deals")
       {:error, _} ->
         conn
-        |> put_flash(:error, "İşlem yürütülemedi.")
+        |> put_flash(:error, gettext "Invalid operation.")
         |> redirect(to: "/deals")
     end
   end
@@ -76,7 +76,7 @@ defmodule CoderjobsWeb.DealController do
     case deal do
       nil ->
         conn
-        |> put_flash(:error, "Cannot find deal.")
+        |> put_flash(:error, gettext "Cannot find deal.")
         |> redirect(to: "/deals")
       deal ->
         render conn, "edit.html",
@@ -95,7 +95,7 @@ defmodule CoderjobsWeb.DealController do
     case DealActions.update(deal, deal_params) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Fırsat başarıyla kaydedildi.")
+        |> put_flash(:info, gettext "Deal updated.")
         |> redirect(to: "/deals")
       {:error, changeset} ->
         render conn, "new.html",
@@ -116,7 +116,7 @@ defmodule CoderjobsWeb.DealController do
         |> redirect(to: "/deals")
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Deal was successfully deleted.")
+        |> put_flash(:info, gettext "Deal was successfully deleted.")
         |> redirect(to: "/deals")
     end
   end

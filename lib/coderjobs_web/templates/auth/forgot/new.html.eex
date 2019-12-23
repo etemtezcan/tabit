@@ -4,7 +4,7 @@
       <div class="col-md-5 col-sm-12 auth-wrapper">
         <div class="card">
           <div class="auth-wrapper--inner">
-            <h4>Şifremi unuttum</h4>
+            <h4><%= gettext "Forgot password"%></h4>
             <hr />
             <form action="/forgot" method="POST">
               <input type="hidden"

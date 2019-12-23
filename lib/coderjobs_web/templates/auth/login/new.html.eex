@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-12 auth-wrapper">
-            <p>Deneme hesap bilgileri: </p>
-            <p>e-posta=deneme@deneme.com, şifre=deneme</p>
+            <p><%= gettext "Trial Account Credentials:"%> </p>
+            <p> <%= gettext "e-mail=deneme@deneme.com, password=deneme"%></p>
         <div class="card">
           <div class="auth-wrapper--inner">
             
-            <h4>Hesaba giriş için</h4>
+            <h4> <%= gettext "Login Credentials"%></h4>
             <hr />
 
             <form method="POST" action="/login">
@@ -19,7 +19,7 @@
                   type="email" 
                   name="email"
                   id="email" 
-                  placeholder="E-posta" />
+                  placeholder= "E-posta" />
               </div>
               <div class="form-group">
                 <input class="form-control 
@@ -29,9 +29,9 @@
                   id="password" 
                   placeholder="Şifre" />
               </div>
-              <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+              <button type="submit" class="btn btn-primary btn-block btn-lg"><%= gettext "Login"%></button>
               <br/>
-              <p><a href="/forgot">Forgot password</a> veya <a href="/register">Register</a></p>
+              <p><a href="/forgot"> <%= gettext "Forgot password" %></a>   or  <a href="/register"> <%= gettext "Register"%></a></p>
             </form>
           </div>
         </div>

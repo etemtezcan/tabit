@@ -4,7 +4,7 @@
       <div class="col-md-5 col-sm-12 auth-wrapper">
         <div class="card">
           <div class="auth-wrapper--inner">
-            <h4>Reset Password</h4>
+            <h4><%= gettext "Reset Password"%></h4>
             <hr />
             <form action="/reset/<%= @reset_code %>" method="POST">
               <p>Fill up the form below with your new password.</p>
@@ -32,7 +32,7 @@
                   class="btn btn-primary btn-block btn-lg">Reset Password
                 </button>
               <br/>
-              <p><a href="/login">Back To Login</a> or <a href="/register">Create New Account</a></p>
+              <p><a href="/login">Back To Login</a> or <a href="/register"><%= gettext "Create New Account"%></a></p>
             </form>
           </div>
         </div>

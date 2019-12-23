@@ -37,7 +37,7 @@ defmodule CoderjobsWeb.PageController do
     changeset = Contact.changeset(%Contact{}, params)
     if changeset.valid? do
       conn 
-      |> put_flash(:info, "Message Sent.")
+      |> put_flash(:info, gettext "Message Sent.")
       |> contact_send(params)
       |> redirect(to: "/contact")
     else
