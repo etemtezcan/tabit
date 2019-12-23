@@ -4,7 +4,7 @@ defmodule Coderjobs.Mixfile do
   def project do
     [
       app: :coderjobs,
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -60,6 +60,7 @@ defmodule Coderjobs.Mixfile do
       {:scrivener_html, "~> 1.7"},
       {:timex, "~> 3.1"},
       {:html_sanitize_ex, "~> 1.3.0-rc3"},
+      {:edeliver, "~> 1.7.0"},
       {:distillery, "~> 2.1.1", warn_missing: false}
     ]
   end

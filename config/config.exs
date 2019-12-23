@@ -10,7 +10,7 @@ config :coderjobs,
   ecto_repos: [Coderjobs.Repo]
 
   
-  config :coderjobs, CoderjobsWeb.Gettext, locales: ~w(en tr) , default_locale: "tr"
+  config :coderjobs, CoderjobsWeb.Gettext, locales: ~w(en tr) , default_locale: "en"
 # Configures the endpoint
 config :coderjobs, CoderjobsWeb.Endpoint,
   url: [host: System.get_env("APP_HOST")],
