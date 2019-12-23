@@ -4,30 +4,16 @@
       <div class="jumbotron text-center featured">
         <h1>Sanayi Fırsatına Hoş geldiniz. </h1> 
       </div>
+      
       <div class="content-inner">
-        <div class="search">
-          <form method="GET">
-            <div class="form-row">
-              <div class="col-5">
-                <label class="sr-only" for="inlineFormInputName2">Keyword</label>
-                <input type="text" class="form-control"
-                  id="inlineFormInputName2"
-                  name="q"
-                  value="<%= @q %>"
-                  placeholder="örn. servo motor" />
-              </div>
-              <div class="col-2">
-                <button type="submit" class="btn btn-primary btn-block">Search</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
+     <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Fırsat Ara" %>
+    <% end %>
         <br />
-        <%= pagination_links @page, next: "Next", previous: "Previous", view_style: :bootstrap_v4 %>
       </div>
     </div>
-
+    
     <%= render CoderjobsWeb.LayoutView, "side.html", assigns %>
 
   </div>

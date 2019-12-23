@@ -36,10 +36,6 @@ config :guardian_db, GuardianDb,
   repo: Coderjobs.Repo,
   schema_name: "guardian_tokens"
 
-config :rummage_ecto, Rummage.ECto, 
-   default_repo: Coderjobs.Repo,
-   default_per_page: 2 
-
 # In your config/config.exs file
 config :coderjobs, Coderjobs.Mailer,
   adapter: Bamboo.MailgunAdapter,
