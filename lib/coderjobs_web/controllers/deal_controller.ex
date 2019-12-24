@@ -125,5 +125,6 @@ defmodule CoderjobsWeb.DealController do
       deals = DealCtx.list_deals(params)
       render(conn, "all.html", deals: deals)
     end
+
   
 end

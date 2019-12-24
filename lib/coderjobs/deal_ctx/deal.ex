@@ -32,7 +32,7 @@ defmodule Coderjobs.DealCtx.Deal do
       |> validate_required([:title, :description])
      # |> validate_inclusion(:status, ["active", "draft"])
      # |> validate_inclusion(:location, get_locations())
-      |> validate_length(:title, min: 10, max: 60)
+      |> validate_length(:title, min: 5, max: 60)
       |> validate_length(:description, max: 5000)
       |> put_change(:user_id, user_id)
     end
@@ -46,7 +46,7 @@ defmodule Coderjobs.DealCtx.Deal do
       |> validate_required([:title, :description])
      # |> validate_inclusion(:status, ["active", "draft"])
      # |> validate_inclusion(:location, get_locations())
-      |> validate_length(:title, min: 10, max: 60)
+      |> validate_length(:title, min: 5, max: 60)
       |> validate_length(:description, max: 5000)
     end
   
@@ -66,6 +66,6 @@ defmodule Coderjobs.DealCtx.Deal do
       from deal in query,
       where: ilike(deal.title, ^wildcard_search),
       or_where: ilike(deal.description, ^wildcard_search)
-    end
+      end
   
 end

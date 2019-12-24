@@ -8,11 +8,12 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Tanım</th>
-      <th>Açıklama</th>
-      <th>Geçerlilik Tarihi</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Valid Till</th>
       <th>Url</th>
-      <th></th>
+      <th>Deal Owner</th>
     </tr>
   </thead>
   <tbody>
@@ -20,8 +21,11 @@
     <tr>
       <td><%= deal.title %></td>
       <td><%= deal.description %></td>
+      <td><%= deal.price %></td>
       <td><%= deal.valid %></td>
       <td><%= deal.url %></td>
+      <td><%= Coderjobs.DealCtx.DealActions.deal_owner(deal.user_id) %></td>
+
     </tr>
 <% end %>
   </tbody>

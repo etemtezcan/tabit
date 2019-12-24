@@ -3,16 +3,13 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Tanım</th>
-      <th>Açıklama</th>
-      <th>Fiyat</th>
-      <th>Geçerlilik Tarihi</th>
-      <th>Durum</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Valid Till</th>
+      <th>Status</th>
       <th>Url</th>
-      <th>User</th>
-      <th>User</th>
-      
-
+    
       <th></th>
     </tr>
   </thead>
@@ -25,7 +22,6 @@
       <td><%= deal.valid %></td>
       <td><%= deal.status %></td>
       <td><%= deal.url %></td>
-      <td><%= deal.user_id %></td>
 
       
 

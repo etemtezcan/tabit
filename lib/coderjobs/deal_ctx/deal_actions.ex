@@ -140,4 +140,15 @@ defmodule Coderjobs.DealCtx.DealActions do
       deal -> deal |> Repo.delete
     end
   end
+  
+  def deal_owner(user_id) do
+    if not is_nil(user_id) do
+      query = from u in Coderjobs.Account.User, where: u.id == ^user_id, select: u.username
+      Repo.all(query)
+    else
+       "----"
+    end  
+  end
+
+
 end

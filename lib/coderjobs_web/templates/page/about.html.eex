@@ -4,7 +4,7 @@
       <div class="content-inner">
         <h3><%= gettext "Title for web site"%> </h3>
    <!--     
-   <h3>TBD Sanayi Fırsatı Hakkında</h3> -->
+   <h3>TBD Sanayi Fırsatı Hakkında</h3> 
         <p>
           Sanayi Fırsatı internet sitesinin amacı ekonominin daraldığı zamanlarda  üreticiler tarafından uygulanan yüksek iskontolara ve 
           düzenlenen kampanyalara, o firmalarla sürekli irtibatı olmayan firmaların ve "maker" topluluklarının da erişebilmelerini sağlamaktır. </p>
@@ -12,7 +12,7 @@
           Bu iskonto ve kampanyaların kalıcı olarak algılanmaması için sınırlı zaman içinde görülüp kullanılabilen sanayi firsatları şeklinde 
           düzenlenecektir. </p>
           <p>Bu fırsatların süresi dolduktan sonra fiyat veya iskonto oran bilgileri herhangi bir şekilde görülemeyecektir. 
-        </p> 
+        </p> -->
         <p>
           <%= gettext "Explanation for web site."%>
         </p>
