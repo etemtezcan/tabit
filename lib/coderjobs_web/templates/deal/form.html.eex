@@ -43,6 +43,6 @@
   </div>
 
   <div class="form-group">
-    <%= submit "Kaydet", class: "btn btn-primary" %>
+    <%= submit (gettext "Save Changes"), class: "btn btn-primary" %>
   </div>
 <% end %>

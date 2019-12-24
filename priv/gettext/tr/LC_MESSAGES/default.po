@@ -28,7 +28,6 @@ msgid "Deal Details"
 msgstr "Fırsat Detayları"
 
 #: lib/coderjobs_web/templates/layout/nav.html.eex:27
-#: lib/coderjobs_web/templates/layout/nav.html.eex:53
 msgid "Deals"
 msgstr "Bütün Fırsatlar"
 
@@ -38,6 +37,7 @@ msgstr "Fırsat Düzenle"
 
 #: lib/coderjobs_web/templates/deal/index.html.eex:1
 #: lib/coderjobs_web/templates/layout/nav.html.eex:17
+#: lib/coderjobs_web/templates/layout/nav.html.eex:53
 msgid "My Deals"
 msgstr "Fırsatlarım"
 
@@ -78,7 +78,7 @@ msgstr "Fırsat Yeniden Kaydedildi"
 msgid "Deal updated."
 msgstr "Fırsat Güncellendi"
 
-#: lib/coderjobs_web/templates/page/about.html.eex:16
+#: lib/coderjobs_web/templates/page/about.html.eex:17
 msgid "Explanation for web site."
 msgstr "Sanayi Fırsatı"
 
@@ -182,6 +182,7 @@ msgstr "e-posta=deneme@deneme.com, şifre=deneme"
 msgid "Register"
 msgstr "Kaydol"
 
+#: lib/coderjobs_web/templates/deal/new.html.eex:6
 #: lib/coderjobs_web/templates/deal/show.html.eex:38
 msgid "Back"
 msgstr "Geri"
@@ -193,3 +194,11 @@ msgstr "Hesap Ayarları"
 #: lib/coderjobs_web/templates/layout/nav.html.eex:54
 msgid "Logout"
 msgstr "Çıkış"
+
+#: lib/coderjobs_web/templates/deal/index.html.eex:43
+msgid "Create New Deal"
+msgstr "Fırsat Oluştur"
+
+#: lib/coderjobs_web/templates/deal/form.html.eex:46
+msgid "Save Changes"
+msgstr "Kaydet"

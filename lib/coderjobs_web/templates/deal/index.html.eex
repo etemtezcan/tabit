@@ -40,4 +40,4 @@
   </tbody>
 </table>
 
-<span><%= link "Yeni Fırsat Tanımla", to: deal_path(@conn, :new) %></span>
+<span><%= link (gettext "Create New Deal"), to: deal_path(@conn, :new) %></span>
