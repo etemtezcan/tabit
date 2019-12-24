@@ -182,6 +182,7 @@ msgstr "e-posta=deneme@deneme.com, şifre=deneme"
 msgid "Register"
 msgstr "Kaydol"
 
+#: lib/coderjobs_web/templates/deal/edit.html.eex:5
 #: lib/coderjobs_web/templates/deal/new.html.eex:6
 #: lib/coderjobs_web/templates/deal/show.html.eex:38
 msgid "Back"
