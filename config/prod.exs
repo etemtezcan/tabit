@@ -15,7 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :coderjobs, CoderjobsWeb.Endpoint,
   http: [:inet6, port: System.get_env("PORT") || 4000],
-  url: [host: "localhost", port: System.get_env("PORT")], # This is critical for ensuring web-sockets properly authorize.
+  url: [host: "178.62.78.240", port: System.get_env("PORT")], # This is critical for ensuring web-sockets properly authorize.
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   root: ".",
