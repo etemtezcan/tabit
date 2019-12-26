@@ -8,7 +8,7 @@
 gitpath
 # Generated on crash by the VM
 erl_crash.dump
-
+gp
 # Generated on crash by NPM
 npm-debug.log
 grep

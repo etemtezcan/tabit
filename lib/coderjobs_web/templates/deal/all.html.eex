@@ -12,22 +12,28 @@
       <th>Description</th>
       <th>Price</th>
       <th>Valid Till</th>
-      <th>Url</th>
-      <th>Deal Owner</th>
+       <th>Expired</th>
+       <th>Url</th>
+       <th>Deal Owner</th>
     </tr>
   </thead>
   <tbody>
 <%= for deal <- @deals do %>
-    <tr>
-      <td><%= deal.title %></td>
-      <td><%= deal.description %></td>
-      <td><%= deal.price %></td>
-      <td><%= deal.valid %></td>
-      <td><%= deal.url %></td>
-      <td><%= Coderjobs.DealCtx.DealActions.deal_owner(deal.user_id) %></td>
-
-    </tr>
-<% end %>
+      <tr>
+        <td><%= deal.title %></td>
+        <td><%= deal.description %></td>
+        <%= if not deal.is_expired do %>
+          <td><%= deal.price %></td>
+          <td><%= deal.valid %></td>
+          <td></td>
+        <% else %>
+          <td></td>
+          <td></td>
+          <td> expired</td>
+       <% end %>
+        <td><%= deal.url %></td>
+        <td><%= Coderjobs.DealCtx.DealActions.deal_owner(deal.user_id) %></td>
+      </tr>
+  <% end %>
   </tbody>
 </table>
-

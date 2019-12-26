@@ -13,6 +13,7 @@ defmodule Coderjobs.DealCtx.Deal do
     field :url, :string
     field :valid, :date
     belongs_to :user , Coderjobs.Account.User
+    field :is_expired, :boolean # valid2 time past
     timestamps()
   end
 
