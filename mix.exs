@@ -4,7 +4,7 @@ defmodule Coderjobs.Mixfile do
   def project do
     [
       app: :coderjobs,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -42,7 +42,7 @@ defmodule Coderjobs.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.3.0"},
+      {:phoenix, "~> 1.3.0"},    #was 1.3.0
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
@@ -50,8 +50,8 @@ defmodule Coderjobs.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:guardian, "~> 0.14"},
-      {:guardian_db, "~> 0.8.0"},
+      {:guardian, "~> 0.14"},    #was 0.14
+      {:guardian_db, "~> 0.8.0"}, #was 0.8.0
       {:comeonin, "~> 4.0"},
       {:bcrypt_elixir, "~> 1.0"},
       {:bamboo_smtp, "~> 1.4.0"},
