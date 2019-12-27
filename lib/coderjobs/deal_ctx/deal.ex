@@ -1,4 +1,5 @@
 defmodule Coderjobs.DealCtx.Deal do
+  use Timex
   use Ecto.Schema
   import Ecto.Changeset
   import Ecto.Query, only: [from: 2]
@@ -21,7 +22,7 @@ defmodule Coderjobs.DealCtx.Deal do
   def changeset(%Deal{} = deal, attrs) do
     deal
     |> cast(attrs, [:title, :description, :price, :valid, :status, :url])
-    |> validate_required([:title, :description, :price, :valid, :status, :url])
+    |> validate_required([:title, :description, :price, :valid])
   end
 
     @doc false
@@ -50,7 +51,7 @@ defmodule Coderjobs.DealCtx.Deal do
       |> validate_length(:title, min: 5, max: 60)
       |> validate_length(:description, max: 5000)
     end
-  
+
     @doc false
     def repost_changeset(%Deal{} = deal) do
       deal
@@ -67,6 +68,7 @@ defmodule Coderjobs.DealCtx.Deal do
       from deal in query,
       where: ilike(deal.title, ^wildcard_search),
       or_where: ilike(deal.description, ^wildcard_search)
-      end
-  
+    end
+
+ 
 end

@@ -3,7 +3,7 @@ defmodule Coderjobs.Repo.Migrations.AddPoisExpiredField do
 
   def change do
     alter table(:deals) do
-      add :is_expired, :boolean, default: false, null: false
+      add :is_expired, :boolean
     end 
   end
 end

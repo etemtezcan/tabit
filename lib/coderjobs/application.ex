@@ -15,7 +15,7 @@ defmodule Coderjobs.Application do
       # Start your own worker by calling: Coderjobs.Worker.start_link(arg1, arg2, arg3)
       # worker(Coderjobs.Worker, [arg1, arg2, arg3]),
       # 5 dakkada bir çalışacak
-      %{ id: "frequent", start: {SchedEx, :run_every, [Coderjobs.Runner, :do_frequent, [], "*/5 * * * *"]} }
+      %{ id: "frequent", start: {SchedEx, :run_every, [Coderjobs.Runner, :do_frequent, [], "*/10 * * * *"]} }
      # ,%{ id: "freq2", start: {SchedEx, :run_every, [fn -> IO.puts "dakka başı" end, "*/1 * * * *"]} }
     ]
 

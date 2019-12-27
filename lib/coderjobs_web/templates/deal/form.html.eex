@@ -26,7 +26,7 @@
 
   <div class="form-group">
     <%= label f, :geçerlilik, class: "control-label" %>
-    <%= date_select f, :valid, class: "form-control" %>
+    <%= date_select f, :valid, class: "form-control", default: {2020, 7, 7} %>
     <%= error_tag f, :valid %>
   </div>
 

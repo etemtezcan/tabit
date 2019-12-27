@@ -1,7 +1,7 @@
 defmodule Coderjobs.DealCtx.DealActions do
   alias Coderjobs.DealCtx.Deal
   alias Coderjobs.Repo
-
+  use Timex
   import Ecto.Query
 
   @doc false
