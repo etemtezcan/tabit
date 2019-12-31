@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.CreateDeals do
+defmodule Indeals.Repo.Migrations.CreateDeals do
   use Ecto.Migration
 
   def change do

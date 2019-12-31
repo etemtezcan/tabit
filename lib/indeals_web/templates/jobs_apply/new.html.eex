@@ -1,0 +1,13 @@
+<div class="page">
+  <div class="row">
+    <div class="col-md-8 left">
+      <div class="content-inner">
+        <h3>Send Application</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius, ex ac euismod suscipit.</p>
+        <%= render IndealsWeb.JobsApplyView, "job.html", assigns %>
+        <%= render IndealsWeb.JobsApplyView, "form.html", assigns %>
+      </div>
+    </div>
+    <%= render IndealsWeb.LayoutView, "side.html", assigns %>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddUsernameFieldUser do
+defmodule Indeals.Repo.Migrations.AddUsernameFieldUser do
   use Ecto.Migration
 
   def change do

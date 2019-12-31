@@ -1,9 +1,9 @@
-defmodule Coderjobs.Mixfile do
+defmodule Indeals.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :coderjobs,
+      app: :indeals,
       version: "0.2.0",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -19,7 +19,7 @@ defmodule Coderjobs.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Coderjobs.Application, []},
+      mod: {Indeals.Application, []},
       extra_applications: [
         :logger,
         :runtime_tools,

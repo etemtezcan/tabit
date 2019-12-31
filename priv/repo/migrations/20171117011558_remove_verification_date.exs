@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.RemoveVerificationDate do
+defmodule Indeals.Repo.Migrations.RemoveVerificationDate do
   use Ecto.Migration
 
   def change do

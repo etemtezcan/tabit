@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddStatusFieldJobs do
+defmodule Indeals.Repo.Migrations.AddStatusFieldJobs do
   use Ecto.Migration
 
   def change do

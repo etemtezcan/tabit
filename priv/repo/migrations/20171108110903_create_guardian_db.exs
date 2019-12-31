@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.CreateGuardianDb do
+defmodule Indeals.Repo.Migrations.CreateGuardianDb do
   use Ecto.Migration
 
   def change do

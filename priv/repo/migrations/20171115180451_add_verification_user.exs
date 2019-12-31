@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddVerificationUser do
+defmodule Indeals.Repo.Migrations.AddVerificationUser do
   use Ecto.Migration
 
   def change do

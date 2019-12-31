@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddPoisExpiredField do
+defmodule Indeals.Repo.Migrations.AddPoisExpiredField do
   use Ecto.Migration
 
   def change do

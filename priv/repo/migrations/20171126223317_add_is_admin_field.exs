@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddIsAdminField do
+defmodule Indeals.Repo.Migrations.AddIsAdminField do
   use Ecto.Migration
 
   def change do

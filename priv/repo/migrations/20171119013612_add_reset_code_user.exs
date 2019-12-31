@@ -1,4 +1,4 @@
-defmodule Coderjobs.Repo.Migrations.AddResetCodeUser do
+defmodule Indeals.Repo.Migrations.AddResetCodeUser do
   use Ecto.Migration
 
   def change do

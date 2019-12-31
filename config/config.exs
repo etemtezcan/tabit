@@ -6,17 +6,17 @@
 use Mix.Config
 
 # General application configuration
-config :coderjobs,
-  ecto_repos: [Coderjobs.Repo]
+config :indeals,
+  ecto_repos: [Indeals.Repo]
 
   
-  config :coderjobs, CoderjobsWeb.Gettext, locales: ~w(en tr) , default_locale: "en"
+  config :indeals, IndealsWeb.Gettext, locales: ~w(en tr) , default_locale: "en"
 # Configures the endpoint
-config :coderjobs, CoderjobsWeb.Endpoint,
+config :indeals, IndealsWeb.Endpoint,
   url: [host: System.get_env("APP_HOST")],
   secret_key_base: "rRkU1m/3/O87Oz8udR6E1CoUljpvyFsCPLJFCGUA/4ip7XX9jsY6cz/7N7DV/Ycq",
-  render_errors: [view: CoderjobsWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Coderjobs.PubSub,
+  render_errors: [view: IndealsWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Indeals.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -26,18 +26,18 @@ config :logger, :console,
 
 config :guardian, Guardian,
   hooks: GuardianDb,
-  issuer: "coderjobs",
+  issuer: "indeals",
   ttl: { 30, :days },
   allowed_drift: 2000,
   secret_key: "e4AaHjImRyAKjsu/9rl3Li90myTFDxlzublTH9Gzck3y9tZdhRFnaUkS/U3Jd/rO",
-  serializer: Coderjobs.GuardianSerializer
+  serializer: Indeals.GuardianSerializer
 
 config :guardian_db, GuardianDb,
-  repo: Coderjobs.Repo,
+  repo: Indeals.Repo,
   schema_name: "guardian_tokens"
 
 # In your config/config.exs file
-config :coderjobs, Coderjobs.Mailer,
+config :indeals, Indeals.Mailer,
   adapter: Bamboo.MailgunAdapter,
   api_key: "key-efe84ffffb5c5a6d1ef9312bfb4f774b",
   domain: "mg.rasteda.com"

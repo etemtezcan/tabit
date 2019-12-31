@@ -1,6 +1,6 @@
 use Mix.Config
 
-config :coderjobs,
+config :indeals,
   admin_email: System.get_env("APP_ADMIN_EMAIL"),
   locations: %{
     "adana" => "Adana",

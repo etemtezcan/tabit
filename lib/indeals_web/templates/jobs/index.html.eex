@@ -1,0 +1,44 @@
+<div class="page">
+  <div class="row">
+    <div class="col-md-8 left">
+      <div class="content-inner">
+        <h3 class="page-title">Manage Posts</h3>
+        <%= if @total > 0 do %>
+        <div class="user-job-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <%= for job <- @jobs do %>
+                <tr>
+                  <th scope="row"><%= job.id %></th>
+                  <td><%= job.title %></td>
+                  <td>
+                    <%= if @status == "archived" do %>
+                    <a href="/jobs/repost/<%= job.id %>">Repost</a>
+                    <% else %>
+                    <a href="/jobs/update/<%= job.id %>">Edit</a> | 
+                    <a href="/jobs/destroy/<%= job.id %>" class="delete-button">Delete</a>
+                    <% end %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center">
+          <%= pagination_links @page, next: "Next", previous: "Previous", view_style: :bootstrap_v4 %>
+        </div>
+        <% else %>
+        <p>Not Items Found</p>
+        <% end %>
+      </div>
+    </div>
+    <%= render IndealsWeb.JobsView, "side.html", status: @status %>
+  </div>
+</div>

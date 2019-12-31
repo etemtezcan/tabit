@@ -1,0 +1,13 @@
+<div class="col-md-4 right">
+  <br/>
+<!--  <p>Listemize abone olun ve fırsatları keşfedin.</p> -->
+ <p> Subscribe to our list.</p>
+  <br/>
+
+  <div class="newsletter">
+    <%= render IndealsWeb.LayoutView, "mailchimp.html", assigns %>
+  </div>
+  <div class="ads">
+    <img src="http://via.placeholder.com/350x300?text=advertisement" />
+  </div>
+</div>
