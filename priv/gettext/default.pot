@@ -249,10 +249,14 @@ msgstr ""
 msgid "Web Site P1"
 msgstr ""
 
-#: lib/indeals_web/templates/page/about.html.eex:11
+#: lib/indeals_web/templates/page/about.html.eex:9
 msgid "Web Site P2"
 msgstr ""
 
 #: lib/indeals_web/templates/page/about.html.eex:5
 msgid "Web Site Title"
+msgstr ""
+
+#: lib/indeals_web/templates/page/index.html.eex:5
+msgid "welcome-message"
 msgstr ""

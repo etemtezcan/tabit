@@ -249,10 +249,14 @@ msgstr "Sanayi Fırsatı internet sitesinin amacı ekonominin daraldığı zaman
 msgid "Web Site P1"
 msgstr "Bu iskonto ve kampanyaların kalıcı olarak algılanmaması için sınırlı zaman içinde görülüp kullanılabilen sanayi firsatları şeklinde düzenlenecektir."
 
-#: lib/indeals_web/templates/page/about.html.eex:11
+#: lib/indeals_web/templates/page/about.html.eex:9
 msgid "Web Site P2"
 msgstr "Bu fırsatların süresi dolduktan sonra fiyat veya iskonto oran bilgileri herhangi bir şekilde görülemeyecektir. "
 
 #: lib/indeals_web/templates/page/about.html.eex:5
 msgid "Web Site Title"
 msgstr "Sanayi Fırsatı Hakkında"
+
+#: lib/indeals_web/templates/page/index.html.eex:5
+msgid "welcome-message"
+msgstr "Sanayi Fırsatına Hoş Geldiniz. v.0.2.0"

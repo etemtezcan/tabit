@@ -10,7 +10,7 @@ config :indeals,
   ecto_repos: [Indeals.Repo]
 
   
-  config :indeals, IndealsWeb.Gettext, locales: ~w(en tr) , default_locale: "tr"
+  config :indeals, IndealsWeb.Gettext, locales: ~w(en tr) , default_locale: "en"
 # Configures the endpoint
 config :indeals, IndealsWeb.Endpoint,
   url: [host: System.get_env("APP_HOST")],

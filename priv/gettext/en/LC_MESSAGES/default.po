@@ -249,10 +249,14 @@ msgstr "Web Site explanation"
 msgid "Web Site P1"
 msgstr "Some explanations about web site paragraph 1"
 
-#: lib/indeals_web/templates/page/about.html.eex:11
+#: lib/indeals_web/templates/page/about.html.eex:9
 msgid "Web Site P2"
 msgstr "Some explanations about web site, paragraph 2"
 
 #: lib/indeals_web/templates/page/about.html.eex:5
 msgid "Web Site Title"
 msgstr "Title for web site"
+
+#: lib/indeals_web/templates/page/index.html.eex:5
+msgid "welcome-message"
+msgstr "Welcome to Our Web Site version 0.2.0"
