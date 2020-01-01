@@ -3,12 +3,12 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Valid Till</th>
-      <th>Status</th>
-      <th>Url</th>
+      <th> <%= gettext "Title" %> </th>
+      <th><%= gettext "Description"%></th>
+      <th><%= gettext "Price"%></th>
+      <th><%= gettext "Valid Till"%></th>
+      <th><%= gettext "Status"%></th>
+      <th><%= gettext "Url"%></th>
     
       <th></th>
     </tr>

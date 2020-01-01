@@ -41,16 +41,16 @@ msgstr ""
 msgid "My Deals"
 msgstr ""
 
-#: lib/indeals_web/templates/deal/index.html.eex:35
+#: lib/indeals_web/templates/deal/index.html.eex:31
 msgid "Delete"
 msgstr ""
 
-#: lib/indeals_web/templates/deal/index.html.eex:34
+#: lib/indeals_web/templates/deal/index.html.eex:30
 #: lib/indeals_web/templates/deal/show.html.eex:37
 msgid "Edit"
 msgstr ""
 
-#: lib/indeals_web/templates/deal/index.html.eex:33
+#: lib/indeals_web/templates/deal/index.html.eex:29
 msgid "Show"
 msgstr ""
 
@@ -76,10 +76,6 @@ msgstr ""
 
 #: lib/indeals_web/controllers/deal_controller.ex:98
 msgid "Deal updated."
-msgstr ""
-
-#: lib/indeals_web/templates/page/about.html.eex:17
-msgid "Explanation for web site."
 msgstr ""
 
 #: lib/indeals_web/templates/auth/forgot/new.html.eex:7
@@ -122,10 +118,6 @@ msgstr ""
 
 #: lib/indeals_web/templates/page/terms.html.eex:5
 msgid "Terms and Conditions"
-msgstr ""
-
-#: lib/indeals_web/templates/page/about.html.eex:5
-msgid "Title for web site"
 msgstr ""
 
 #: lib/indeals_web/controllers/auth/login_controller.ex:19
@@ -196,10 +188,71 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: lib/indeals_web/templates/deal/index.html.eex:43
+#: lib/indeals_web/templates/deal/index.html.eex:39
 msgid "Create New Deal"
 msgstr ""
 
 #: lib/indeals_web/templates/deal/form.html.eex:46
 msgid "Save Changes"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:17
+msgid "Deal Owner"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:12
+#: lib/indeals_web/templates/deal/index.html.eex:7
+msgid "Description"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:15
+msgid "Expired"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:13
+#: lib/indeals_web/templates/deal/index.html.eex:8
+msgid "Price"
+msgstr ""
+
+#: lib/indeals_web/templates/page/index.html.eex:11
+msgid "Search Deal"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/index.html.eex:10
+msgid "Status"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:11
+#: lib/indeals_web/templates/deal/index.html.eex:6
+msgid "Title"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:16
+#: lib/indeals_web/templates/deal/index.html.eex:11
+msgid "Url"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:14
+#: lib/indeals_web/templates/deal/index.html.eex:9
+msgid "Valid Till"
+msgstr ""
+
+#: lib/indeals_web/templates/deal/all.html.eex:33
+msgid "expired"
+msgstr ""
+
+#: lib/indeals_web/templates/page/about.html.eex:7
+msgid "Web Site Def1"
+msgstr ""
+
+#: lib/indeals_web/templates/page/about.html.eex:8
+msgid "Web Site P1"
+msgstr ""
+
+#: lib/indeals_web/templates/page/about.html.eex:11
+msgid "Web Site P2"
+msgstr ""
+
+#: lib/indeals_web/templates/page/about.html.eex:5
+msgid "Web Site Title"
 msgstr ""

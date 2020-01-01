@@ -8,13 +8,14 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Valid Till</th>
-       <th>Expired</th>
-       <th>Url</th>
-       <th>Deal Owner</th>
+      <th> <%= gettext "Title" %> </th>
+      <th><%= gettext "Description"%></th>
+      <th><%= gettext "Price"%></th>
+      <th><%= gettext "Valid Till"%></th>
+      <th><%= gettext "Expired"%></th>
+      <th><%= gettext "Url"%></th>
+      <th><%= gettext "Deal Owner"%></th>
+    
     </tr>
   </thead>
   <tbody>
@@ -29,7 +30,7 @@
         <% else %>
           <td></td>
           <td></td>
-          <td> expired</td>
+          <td> <%= gettext "expired"%></td>
        <% end %>
         <td><%= deal.url %></td>
         <td><%= Indeals.DealCtx.DealActions.deal_owner(deal.user_id) %></td>

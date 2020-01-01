@@ -8,7 +8,7 @@
       <div class="content-inner">
      <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
       <%= search_input f, :query %>
-      <%= submit "Fırsat Ara" %>
+      <%= submit (gettext "Search Deal") %>
     <% end %>
         <br />
       </div>

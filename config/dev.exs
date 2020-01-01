@@ -53,7 +53,7 @@ config :indeals, Indeals.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "indeals_dev",
+  database: "coderjobs_dev",
   hostname: "localhost",
   pool_size: 10,
   port: 5432
