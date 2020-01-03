@@ -9,7 +9,7 @@ defmodule Indeals.Email do
 
   @base_layout "email.html"
   @mail_from "Rasteda Elektronik <info@rasteda.com>"
-  @mail_reply_to "info@rasteda.com"
+  @mail_reply_to "etem.tezcan@rasteda.com"
   
   @message_subject_welcome "Sanayi Fırsatına Hoşgeldiniz "
   @message_subject_reset "Şifre Sıfırlama"

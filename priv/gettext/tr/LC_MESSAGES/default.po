@@ -259,4 +259,4 @@ msgstr "Sanayi Fırsatı Hakkında"
 
 #: lib/indeals_web/templates/page/index.html.eex:5
 msgid "welcome-message"
-msgstr "Sanayi Fırsatına Hoş Geldiniz. v.0.2.0"
+msgstr "Sanayi Fırsatına Hoş Geldiniz. v.0.3.0"

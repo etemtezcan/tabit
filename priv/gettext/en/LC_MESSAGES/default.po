@@ -259,4 +259,4 @@ msgstr "Title for web site"
 
 #: lib/indeals_web/templates/page/index.html.eex:5
 msgid "welcome-message"
-msgstr "Welcome to Our Web Site version 0.2.0"
+msgstr "Welcome to Our Web Site version 0.3.0"

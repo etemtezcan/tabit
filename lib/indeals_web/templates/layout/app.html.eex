@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sanayi Fırsatlarını Yakalayın">
-    <meta name="author" content="info@rasteda.com">
+    <meta name="author" content="etem.tezcan@rasteda.com">
     <%= if Guardian.Plug.current_token(@conn) do %>
       <meta name="guardian_token" content="<%= Guardian.Plug.current_token(@conn) %>">
     <% end %>
