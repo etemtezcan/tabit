@@ -67,7 +67,9 @@ defmodule Indeals.DealCtx.Deal do
   
       from deal in query,
       where: ilike(deal.title, ^wildcard_search),
-      or_where: ilike(deal.description, ^wildcard_search)
+      or_where: ilike(deal.description, ^wildcard_search),
+      order_by: [{:asc, deal.valid}]
+
     end
 
  

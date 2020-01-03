@@ -34,7 +34,7 @@
                 <%= twbs4_text_input_tag f, :password_confirmation, placeholder: "Şifre Doğrulama", type: "password" %>
                 <%= twbs4_error_tag f, :password_confirmation %>
               </div>
-              <button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+              <button type="submit" class="btn btn-primary btn-block btn-lg"> <%= gettext "Register"%> </button>
               <br/>
               <p><a href="/forgot">Şifremi Unuttum</a> or <a href="/login">Bağlan</a></p>
             <% end %>

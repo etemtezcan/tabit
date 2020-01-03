@@ -120,7 +120,7 @@ defmodule IndealsWeb.DealController do
         |> redirect(to: "/deals")
     end
   end
-
+  @sort_keys ~w(name email)
   def all(conn, params \\ %{}) do
       deals = DealCtx.list_deals(params)
       render(conn, "all.html", deals: deals)

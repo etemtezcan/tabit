@@ -87,7 +87,7 @@ defmodule Indeals.DealCtx.DealActions do
 
   def search(query, search_term) do
     wildcard_search = "%#{search_term}%"
-
+   # muhtemelen redundant, deal içinde de var
     from deal in query,
     where: ilike(deal.title, ^wildcard_search)
   end
