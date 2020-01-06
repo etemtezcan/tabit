@@ -81,9 +81,9 @@ workflows:
       - generate_documentation:
           requires:
             - build
-      - dialyzer:
-          requires:
-            - build
+ #     - dialyzer:
+ #         requires:
+ #           - build
       - test:
           requires:
             - build
