@@ -37,6 +37,8 @@ defmodule IndealsWeb.Router do
     get "/contact", PageController, :contact
     post "/contact", PageController, :contact_post
     get "/terms", PageController, :terms
+    get "/all", DealController, :all  
+ 
 
     # AUTH STUFF
     get "/login", Auth.LoginController, :new
@@ -72,7 +74,7 @@ defmodule IndealsWeb.Router do
       # USER DEALS
       get "/deals", DealController, :index 
       get "/src", DealController, :src
-      get "/all", DealController, :all  
+#      get "/all", DealController, :all  
       get "/deals/submit", DealController, :new
       post "/deals/submit", DealController, :create
       get "/deals/repost/:id", DealController, :repost

@@ -4,8 +4,7 @@
       <div class="content-inner">
         <h3> <%= gettext "Contact Us"%> </h3>
      
-<!--        <p>  Sanayi Fırsatı hakkındaki görüş ve önerileriniz için. </p> -->
-        
+     
 <!--
              <%= form_for @changeset, page_path(@conn, :contact_post), fn f -> %>
 

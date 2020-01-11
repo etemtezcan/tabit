@@ -163,11 +163,11 @@ msgstr "Bu sayfaya erişim için giriş yapmalısınız"
 
 #: lib/indeals_web/templates/auth/login/new.html.eex:5
 msgid "Trial Account Credentials:"
-msgstr "Deneme hesap bilgileri"
+msgstr ""
 
 #: lib/indeals_web/templates/auth/login/new.html.eex:6
 msgid "e-mail=deneme@deneme.com, password=deneme"
-msgstr "e-posta=deneme@deneme.com, şifre=deneme"
+msgstr ""
 
 #: lib/indeals_web/templates/auth/login/new.html.eex:34
 #: lib/indeals_web/templates/layout/nav.html.eex:65
@@ -198,7 +198,7 @@ msgstr "Kaydet"
 
 #: lib/indeals_web/templates/deal/all.html.eex:17
 msgid "Deal Owner"
-msgstr "Fırsatı Sunan"
+msgstr "İlan Sahibi"
 
 #: lib/indeals_web/templates/deal/all.html.eex:12
 #: lib/indeals_web/templates/deal/index.html.eex:7
@@ -243,20 +243,20 @@ msgstr "kapandı"
 
 #: lib/indeals_web/templates/page/about.html.eex:7
 msgid "Web Site Def1"
-msgstr "Sanayi Fırsatı internet sitesinin amacı ekonominin daraldığı zamanlarda üreticiler tarafından uygulanan yüksek iskontolara ve düzenlenen kampanyalara, o firmalarla sürekli irtibatı olmayan firmaların ve maker topluluklarının da erişebilmelerini sağlamaktır."
+msgstr "Tarım Fırsatı internet sitesinin amacı çiftçiler ve tarım sektörüne yönelik firmalar için bir pazaryeri görevi görmektir."
 
 #: lib/indeals_web/templates/page/about.html.eex:8
 msgid "Web Site P1"
-msgstr "Bu iskonto ve kampanyaların kalıcı olarak algılanmaması için sınırlı zaman içinde görülüp kullanılabilen sanayi firsatları şeklinde düzenlenecektir."
+msgstr "İlanların geçerlilik tarihleri dolduğunda otomatikman kapatılacak ve süresi geçmiş ilanlar karışıklığa yol açmayacaktır."
 
 #: lib/indeals_web/templates/page/about.html.eex:9
 msgid "Web Site P2"
-msgstr "Bu fırsatların süresi dolduktan sonra fiyat veya iskonto oran bilgileri herhangi bir şekilde görülemeyecektir. "
+msgstr "Çiftçiler e-postaya gerek duymadan akıllı telefonlarla sisteme bağlanabilecekler. "
 
 #: lib/indeals_web/templates/page/about.html.eex:5
 msgid "Web Site Title"
-msgstr "Sanayi Fırsatı Hakkında"
+msgstr "Tarım Fırsatı Hakkında"
 
 #: lib/indeals_web/templates/page/index.html.eex:5
 msgid "welcome-message"
-msgstr "Sanayi Fırsatına Hoş Geldiniz. v.0.3.0"
+msgstr "Tarım Fırsatına Hoş Geldiniz. v.0.4.0"

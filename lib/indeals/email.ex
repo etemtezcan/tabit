@@ -11,7 +11,7 @@ defmodule Indeals.Email do
   @mail_from "Rasteda Elektronik <info@rasteda.com>"
   @mail_reply_to "etem.tezcan@rasteda.com"
   
-  @message_subject_welcome "Sanayi Fırsatına Hoşgeldiniz "
+  @message_subject_welcome "Tarım Fırsatına Hoşgeldiniz "
   @message_subject_reset "Şifre Sıfırlama"
   @message_subject_contact "İletişim Formu"
   @message_subject_application "Job Application"

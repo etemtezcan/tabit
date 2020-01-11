@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sanayi Fırsatlarını Yakalayın">
+    <meta name="description" content="Tarım Fırsatlarını Yakalayın">
     <meta name="author" content="etem.tezcan@rasteda.com">
     <title><%= @message %></title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
-      <a class="navbar-brand" href="/">Sanayi Fırsatı </a>
+      <a class="navbar-brand" href="/">Tarım Fırsatı </a>
       <button class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -50,7 +50,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Bütün Hakları Saklıdır &copy; 2019 Sanayi Fırsatı | <a href="/terms">Kullanım Koşulları</a></span>
+        <span class="text-muted">Bütün Hakları Saklıdır &copy; 2019 Tarım Fırsatı | <a href="/terms">Kullanım Koşulları</a></span>
       </div>
     </footer>
     

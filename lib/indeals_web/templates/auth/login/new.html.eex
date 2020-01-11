@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-12 auth-wrapper">
-            <p><%= gettext "Trial Account Credentials:"%> </p>
-            <p> <%= gettext "e-mail=deneme@deneme.com, password=deneme"%></p>
+           <!-- <p><%= gettext "Trial Account Credentials:"%> </p>
+            <p> <%= gettext "e-mail=deneme@deneme.com, password=deneme"%></p> -->
         <div class="card">
           <div class="auth-wrapper--inner">
             
