@@ -19,7 +19,8 @@
                   type="email" 
                   name="email"
                   id="email" 
-                  placeholder= "E-posta" />
+                  placeholder= "deneme@deneme.com" 
+                  />
               </div>
               <div class="form-group">
                 <input class="form-control 
@@ -27,7 +28,7 @@
                   type="password" 
                   name="password" 
                   id="password" 
-                  placeholder="Şifre" />
+                  placeholder="deneme" />
               </div>
               <button type="submit" class="btn btn-primary btn-block btn-lg"><%= gettext "Login"%></button>
               <br/>
