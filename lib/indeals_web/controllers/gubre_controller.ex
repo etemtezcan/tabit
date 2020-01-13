@@ -15,7 +15,8 @@ defmodule IndealsWeb.GubreController do
   end
 
   def create(conn, %{"gubre" => gubre_params}) do
-    case Tarim.create_gubre(gubre_params) do
+    user = Guardian.Plug.current_resource(conn)
+    case Tarim.create_gubre(gubre_params, user) do
       {:ok, gubre} ->
         conn
         |> put_flash(:info, "Gübre başarıyla oluşturuldu.")

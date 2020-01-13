@@ -14,6 +14,7 @@
       <th>Yer</th>
       <th>Fiyat</th>
       <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
     
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><%= ekipman.yer %></td>
         <td><%= ekipman.fiyat %></td>
         <td><%= ekipman.gecerlilik %></td>
+      <td><%= Indeals.Tarim.deal_owner(ekipman.user_id) %></td>
         
     </tr>
   <% end %>

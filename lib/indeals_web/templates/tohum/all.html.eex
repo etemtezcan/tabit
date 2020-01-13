@@ -14,6 +14,7 @@
       <th>Yer</th>
       <th>Kilo Fiyat</th>
       <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
     
     </tr>
   </thead>
@@ -26,6 +27,8 @@
         <td><%= tohum.yer %></td>
         <td><%= tohum.kilo_fiyat %></td>
         <td><%= tohum.gecerlilik %></td>
+        <td><%= Indeals.Tarim.deal_owner(tohum.user_id) %></td>
+
     </tr>
   <% end %>
   </tbody>

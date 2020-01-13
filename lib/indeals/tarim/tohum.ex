@@ -13,7 +13,6 @@ defmodule Indeals.Tarim.Tohum do
     field :yer, :string
     field :çeşit, :string
     field :user_id, :id
-
     timestamps()
   end
 
@@ -22,6 +21,7 @@ defmodule Indeals.Tarim.Tohum do
     tohum
     |> cast(attrs, [:cins, :çeşit, :açıklama, :yer, :kilo_fiyat, :gecerlilik])
     |> validate_required([:cins, :çeşit, :açıklama, :yer, :kilo_fiyat, :gecerlilik])
+ 
   end
 
   def search(query, search_term) do

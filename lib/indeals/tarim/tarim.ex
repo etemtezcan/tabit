@@ -5,7 +5,7 @@ defmodule Indeals.Tarim do
 
   import Ecto.Query, warn: false
   alias Indeals.Repo
-
+  alias Indeals.Account.User
   alias Indeals.Tarim.Urun
 
   @doc """
@@ -55,8 +55,8 @@ defmodule Indeals.Tarim do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_urun(attrs \\ %{}) do
-    %Urun{}
+  def create_urun(attrs \\ %{},%User{id: user_id}) do
+    %Urun{user_id: user_id}
     |> Urun.changeset(attrs)
     |> Repo.insert()
   end
@@ -159,8 +159,8 @@ defmodule Indeals.Tarim do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_tohum(attrs \\ %{}) do
-    %Tohum{}
+  def create_tohum(attrs \\ %{}, %User{id: user_id}) do
+    %Tohum{user_id: user_id}
     |> Tohum.changeset(attrs)
     |> Repo.insert()
   end
@@ -261,8 +261,8 @@ defmodule Indeals.Tarim do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_gubre(attrs \\ %{}) do
-    %Gubre{}
+  def create_gubre(attrs \\ %{}, %User{id: user_id}) do
+    %Gubre{user_id: user_id}
     |> Gubre.changeset(attrs)
     |> Repo.insert()
   end
@@ -363,8 +363,8 @@ defmodule Indeals.Tarim do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_ekipman(attrs \\ %{}) do
-    %Ekipman{}
+  def create_ekipman(attrs \\ %{}, %User{id: user_id}) do
+    %Ekipman{user_id: user_id}
     |> Ekipman.changeset(attrs)
     |> Repo.insert()
   end
@@ -466,8 +466,8 @@ defmodule Indeals.Tarim do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_arazi(attrs \\ %{}) do
-    %Arazi{}
+  def create_arazi(attrs \\ %{}, %User{id: user_id}) do
+    %Arazi{user_id: user_id}
     |> Arazi.changeset(attrs)
     |> Repo.insert()
   end
@@ -518,4 +518,14 @@ defmodule Indeals.Tarim do
   def change_arazi(%Arazi{} = arazi) do
     Arazi.changeset(arazi, %{})
   end
+
+  def deal_owner(user_id) do
+    if not is_nil(user_id) do
+      query = from u in Indeals.Account.User, where: u.id == ^user_id, select: u.mobile
+        Repo.all(query)
+    else
+       "----"
+    end  
+  end
+
 end

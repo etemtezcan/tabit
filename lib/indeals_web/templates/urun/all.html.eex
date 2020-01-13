@@ -15,6 +15,7 @@
       <th>Kilo Fiyat</th>
       <th>Üretim tarihi</th>
       <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
     
     </tr>
   </thead>
@@ -29,6 +30,7 @@
           <td><%= urun.kilo_fiyat %></td>
           <td><%= urun.uretim_tarihi %></td>
           <td><%= urun.gecerlilik %></td>
+          <td><%= Indeals.Tarim.deal_owner(urun.user_id) %></td>
     </tr>
   <% end %>
   </tbody>

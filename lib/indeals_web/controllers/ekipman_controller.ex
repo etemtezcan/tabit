@@ -15,7 +15,8 @@ defmodule IndealsWeb.EkipmanController do
   end
 
   def create(conn, %{"ekipman" => ekipman_params}) do
-    case Tarim.create_ekipman(ekipman_params) do
+    user = Guardian.Plug.current_resource(conn)
+    case Tarim.create_ekipman(ekipman_params, user) do
       {:ok, ekipman} ->
         conn
         |> put_flash(:info, "Ekipman başarıyla oluşturuldu.")

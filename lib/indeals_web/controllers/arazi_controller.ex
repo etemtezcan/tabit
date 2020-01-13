@@ -15,7 +15,9 @@ defmodule IndealsWeb.AraziController do
   end
 
   def create(conn, %{"arazi" => arazi_params}) do
-    case Tarim.create_arazi(arazi_params) do
+    user = Guardian.Plug.current_resource(conn)
+
+    case Tarim.create_arazi(arazi_params, user) do
       {:ok, arazi} ->
         conn
         |> put_flash(:info, "Arazi başarıyla oluşturuldu.")

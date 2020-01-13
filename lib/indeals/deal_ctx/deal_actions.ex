@@ -144,7 +144,7 @@ defmodule Indeals.DealCtx.DealActions do
   def deal_owner(user_id) do
     if not is_nil(user_id) do
       query = from u in Indeals.Account.User, where: u.id == ^user_id, select: u.mobile
-      Repo.all(query)
+       Repo.all(query)
     else
        "----"
     end  

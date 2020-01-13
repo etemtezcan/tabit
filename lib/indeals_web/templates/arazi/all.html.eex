@@ -14,6 +14,7 @@
       <th>Yüzölçüm</th>
       <th>Fiyat</th>
       <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
     
     </tr>
   </thead>
@@ -27,6 +28,8 @@
 
           <td><%= arazi.fiyat %></td>
           <td><%= arazi.gecerlilik %></td>
+          <td><%= Indeals.Tarim.deal_owner(arazi.user_id) %></td>
+    
           <td></td>
     </tr>
   <% end %>

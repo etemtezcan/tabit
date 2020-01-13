@@ -15,7 +15,8 @@ defmodule IndealsWeb.UrunController do
   end
 
   def create(conn, %{"urun" => urun_params}) do
-    case Tarim.create_urun(urun_params) do
+    user = Guardian.Plug.current_resource(conn)
+    case Tarim.create_urun(urun_params, user) do
       {:ok, urun} ->
         conn
         |> put_flash(:info, "Ürün başarıyla oluşturuldu.")

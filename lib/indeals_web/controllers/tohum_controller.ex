@@ -15,7 +15,8 @@ defmodule IndealsWeb.TohumController do
   end
 
   def create(conn, %{"tohum" => tohum_params}) do
-    case Tarim.create_tohum(tohum_params) do
+    user = Guardian.Plug.current_resource(conn)
+    case Tarim.create_tohum(tohum_params, user) do
       {:ok, tohum} ->
         conn
         |> put_flash(:info, "Tohum başarıyla oluşturuldu.")
