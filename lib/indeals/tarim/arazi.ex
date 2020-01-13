@@ -37,11 +37,5 @@ defmodule Indeals.Tarim.Arazi do
       #,order_by: [{:asc, deal.valid}]
 
     end
-  def list_araziler(params) do
-    search_term= get_in(params, ["query"])
-    Arazi
-    |> Arazi.search(search_term)
-    |> Repo.all()
-  end
 
 end

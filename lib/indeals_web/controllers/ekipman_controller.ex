@@ -57,4 +57,10 @@ defmodule IndealsWeb.EkipmanController do
     |> put_flash(:info, "Ekipman başarıyla silindi.")
     |> redirect(to: ekipman_path(conn, :index))
   end
+
+  def all(conn, params \\ %{}) do
+      ekipmanlar = Tarim.list_ekipmanlar(params)
+      render(conn, "all.html", ekipmanlar: ekipmanlar)
+  end
+
 end

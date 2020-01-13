@@ -39,6 +39,10 @@ defmodule IndealsWeb.Router do
     get "/terms", PageController, :terms
     get "/all", DealController, :all  
     get "/arazilistele", AraziController, :all  
+    get "/ekipmanlistele", EkipmanController, :all  
+    get "/urunlistele", UrunController, :all  
+    get "/tohumlistele", TohumController, :all  
+    get "/gubrelistele", GubreController, :all  
  
 
     # AUTH STUFF

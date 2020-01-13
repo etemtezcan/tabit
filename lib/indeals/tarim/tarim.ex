@@ -20,6 +20,12 @@ defmodule Indeals.Tarim do
   def list_urunler do
     Repo.all(Urun)
   end
+  def list_urunler(params) do
+    search_term= get_in(params, ["query"])
+    Urun
+    |> Urun.search(search_term)
+    |> Repo.all()
+  end
 
   @doc """
   Gets a single urun.
@@ -117,6 +123,14 @@ defmodule Indeals.Tarim do
     Repo.all(Tohum)
   end
 
+  def list_tohumlar(params) do
+    search_term= get_in(params, ["query"])
+    Tohum
+    |>Tohum.search(search_term)
+    |> Repo.all()
+  end
+
+
   @doc """
   Gets a single tohum.
 
@@ -211,6 +225,12 @@ defmodule Indeals.Tarim do
   """
   def list_gubreler do
     Repo.all(Gubre)
+  end
+  def list_gubreler(params) do
+    search_term= get_in(params, ["query"])
+    Gubre
+    |> Gubre.search(search_term)
+    |> Repo.all()
   end
 
   @doc """
@@ -307,6 +327,12 @@ defmodule Indeals.Tarim do
   """
   def list_ekipmanlar do
     Repo.all(Ekipman)
+  end
+  def list_ekipmanlar(params) do
+    search_term= get_in(params, ["query"])
+    Ekipman
+    |> Ekipman.search(search_term)
+    |> Repo.all()
   end
 
   @doc """
