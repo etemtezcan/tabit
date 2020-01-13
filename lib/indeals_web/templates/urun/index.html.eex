@@ -28,8 +28,8 @@
       <td class="text-right">
         <span><%= link "Göster", to: urun_path(@conn, :show, urun), class: "btn btn-default btn-xs" %></span>
         <span><%= link "Düzenle", to: urun_path(@conn, :edit, urun), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: urun_path(@conn, :delete, urun), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
+        <a href="/urunler/destroy/<%= urun.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+  </td>
     </tr>
 <% end %>
   </tbody>

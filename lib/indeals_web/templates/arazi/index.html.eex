@@ -32,7 +32,8 @@
       <td class="text-right">
         <span><%= link "Göster", to: arazi_path(@conn, :show, arazi), class: "btn btn-default btn-xs" %></span>
         <span><%= link "Düzenle", to: arazi_path(@conn, :edit, arazi), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: arazi_path(@conn, :delete, arazi), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+        <a href="/araziler/destroy/<%= arazi.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+    
       </td>
     </tr>
 <% end %>

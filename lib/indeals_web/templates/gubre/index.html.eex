@@ -28,8 +28,8 @@
       <td class="text-right">
         <span><%= link "Göster", to: gubre_path(@conn, :show, gubre), class: "btn btn-default btn-xs" %></span>
         <span><%= link "Düzenle", to: gubre_path(@conn, :edit, gubre), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: gubre_path(@conn, :delete, gubre), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
+         <a href="/gubreler/destroy/<%= gubre.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+    </td>
     </tr>
 <% end %>
   </tbody>

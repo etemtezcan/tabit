@@ -54,7 +54,7 @@ defmodule IndealsWeb.EkipmanController do
     {:ok, _ekipman} = Tarim.delete_ekipman(ekipman)
 
     conn
-    |> put_flash(:info, "Ekipman deleted successfully.")
+    |> put_flash(:info, "Ekipman başarıyla silindi.")
     |> redirect(to: ekipman_path(conn, :index))
   end
 end

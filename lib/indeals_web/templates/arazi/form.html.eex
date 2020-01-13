@@ -55,7 +55,7 @@
 
   <div class="form-group">
     <%= label f, :gecerlilik, class: "control-label" %>
-    <%= date_select f, :gecerlilik, class: "form-control" %>
+    <%= date_select f, :gecerlilik, class: "form-control", default: {2020, 2, 2} %>
     <%= error_tag f, :gecerlilik %>
   </div>
 

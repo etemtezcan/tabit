@@ -13,9 +13,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <%= if logged_in?(@conn) do %>
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/deals">  <%= gettext "My Deals"%> </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="/urunler">Ürünler </a>
           </li>
@@ -37,11 +38,12 @@
             <a class="nav-link" href="/about"><%= gettext "About Us"%></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact"><%= gettext "Contact Us"%></a>
+            <a class="nav-link" href="/contact">İrtibat</a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/all"><%= gettext "Deals"%></a>
-          </li>
+          </li> -->
 
         </ul>
         
