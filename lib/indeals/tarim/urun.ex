@@ -24,4 +24,16 @@ defmodule Indeals.Tarim.Urun do
     |> cast(attrs, [:cins, :açıklama, :yer, :miktar_ton, :kilo_fiyat, :uretim_tarihi, :gecerlilik])
     |> validate_required([:cins, :açıklama, :yer, :miktar_ton, :kilo_fiyat, :uretim_tarihi, :gecerlilik])
   end
+
+
+  def search(query, search_term) do
+      wildcard_search = "%#{search_term}%"
+      from urun in query,
+      where: ilike(urun.cins, ^wildcard_search),
+      or_where: ilike(urun.açıklama, ^wildcard_search),
+      or_where: ilike(urun.yer, ^wildcard_search)
+      #,order_by: [{:asc, deal.valid}]
+
+  end
+
 end

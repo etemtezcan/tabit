@@ -1,0 +1,35 @@
+<h2> Ürün İlanları </h2>
+
+<%= form_for @conn, urun_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Ürün Ara" %>
+    <% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cins </th>
+      <th>Açıklama</th>
+      <th>Yer</th>
+      <th>Miktar(Ton)</th>
+      <th>Kilo Fiyat</th>
+      <th>Üretim tarihi</th>
+      <th>Geçerlilik</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for urun <- @urunler do %>
+      <tr>
+        <td><%= urun.cins %></td>
+        <td><%= urun.açıklama %></td>
+        <td><%= urun.yer %></td>
+        <td><%= urun.miktar_ton %></td>
+
+          <td><%= urun.kilo_fiyat %></td>
+          <td><%= urun.uretim_tarihi %></td>
+          <td><%= urun.gecerlilik %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

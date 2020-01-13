@@ -57,4 +57,10 @@ defmodule IndealsWeb.TohumController do
     |> put_flash(:info, "Tohum başarıyla silindi.")
     |> redirect(to: tohum_path(conn, :index))
   end
+
+  def all(conn, params \\ %{}) do
+      tohumlar = Tarim.list_tohumlar(params)
+      render(conn, "all.html", tohumlar: tohumlar)
+  end
+
 end

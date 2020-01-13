@@ -57,4 +57,12 @@ defmodule IndealsWeb.UrunController do
     |> put_flash(:info, "Ürün başarıyla silindi.")
     |> redirect(to: urun_path(conn, :index))
   end
+
+
+  def all(conn, params \\ %{}) do
+      urunler = Tarim.list_urunler(params)
+      render(conn, "all.html", urunler: urunler)
+  end
+
+
 end

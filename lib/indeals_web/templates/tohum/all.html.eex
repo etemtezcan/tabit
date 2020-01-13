@@ -1,0 +1,32 @@
+<h2> Tohum İlanları </h2>
+
+<%= form_for @conn, tohum_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Tohum Ara" %>
+    <% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cins </th>
+      <th>Çeşit </th>
+      <th>Açıklama</th>
+      <th>Yer</th>
+      <th>Kilo Fiyat</th>
+      <th>Geçerlilik</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for tohum <- @tohumlar do %>
+      <tr>
+        <td><%= tohum.cins %></td>
+        <td><%= tohum.çeşit %></td>
+        <td><%= tohum.açıklama %></td>
+        <td><%= tohum.yer %></td>
+        <td><%= tohum.kilo_fiyat %></td>
+        <td><%= tohum.gecerlilik %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
