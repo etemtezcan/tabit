@@ -18,19 +18,19 @@
             <a class="nav-link" href="/deals">  <%= gettext "My Deals"%> </a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="/urunler">Ürünler </a>
+            <a class="nav-link" href="/urunler">Ürün </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tohumlar">Tohumlar </a>
+            <a class="nav-link" href="/tohumlar">Tohum </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/gubreler">Gübreler </a>
+            <a class="nav-link" href="/gubreler">Gübre </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ekipmanlar">Ekipmanlar </a>
+            <a class="nav-link" href="/ekipmanlar">Ekipman </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/araziler">Araziler</a>
+            <a class="nav-link" href="/araziler">Arazi</a>
           </li>
           
           <% end %>
