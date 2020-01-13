@@ -2,6 +2,7 @@ defmodule Indeals.Tarim.Urun do
   use Ecto.Schema
   import Ecto.Changeset
   alias Indeals.Tarim.Urun
+  import Ecto.Query, only: [from: 2]
 
 
   schema "urunler" do

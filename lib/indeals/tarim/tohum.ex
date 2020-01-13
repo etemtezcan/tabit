@@ -2,6 +2,7 @@ defmodule Indeals.Tarim.Tohum do
   use Ecto.Schema
   import Ecto.Changeset
   alias Indeals.Tarim.Tohum
+  import Ecto.Query, only: [from: 2]
 
 
   schema "tohumlar" do

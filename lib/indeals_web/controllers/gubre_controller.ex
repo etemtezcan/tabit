@@ -57,4 +57,10 @@ defmodule IndealsWeb.GubreController do
     |> put_flash(:info, "Gübre başarıyla silindi.")
     |> redirect(to: gubre_path(conn, :index))
   end
+
+  def all(conn, params \\ %{}) do
+      gubreler = Tarim.list_gubreler(params)
+      render(conn, "all.html", gubreler: gubreler)
+  end
+
 end
