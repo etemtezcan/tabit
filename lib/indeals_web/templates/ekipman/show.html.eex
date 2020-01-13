@@ -1,0 +1,43 @@
+<h2>Ekipman Detayları</h2>
+
+<ul>
+
+  <li>
+    <strong>Cins:</strong>
+    <%= @ekipman.cins %>
+  </li>
+
+  <li>
+    <strong>Marka:</strong>
+    <%= @ekipman.marka %>
+  </li>
+
+  <li>
+    <strong>Model:</strong>
+    <%= @ekipman.model %>
+  </li>
+
+  <li>
+    <strong>Özellik:</strong>
+    <%= @ekipman.özellik %>
+  </li>
+
+  <li>
+    <strong>Yer:</strong>
+    <%= @ekipman.yer %>
+  </li>
+
+  <li>
+    <strong>Fiyat:</strong>
+    <%= @ekipman.fiyat %>
+  </li>
+
+  <li>
+    <strong>Gecerlilik:</strong>
+    <%= @ekipman.gecerlilik %>
+  </li>
+
+</ul>
+
+<span><%= link "Düzenle", to: ekipman_path(@conn, :edit, @ekipman) %></span>
+<span><%= link "Geri", to: ekipman_path(@conn, :index) %></span>

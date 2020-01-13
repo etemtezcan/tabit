@@ -1,0 +1,38 @@
+<h2>Tohum Detayı</h2>
+
+<ul>
+
+  <li>
+    <strong>Cins:</strong>
+    <%= @tohum.cins %>
+  </li>
+
+  <li>
+    <strong>Çeşit:</strong>
+    <%= @tohum.çeşit %>
+  </li>
+
+  <li>
+    <strong>Açıklama:</strong>
+    <%= @tohum.açıklama %>
+  </li>
+
+  <li>
+    <strong>Yer:</strong>
+    <%= @tohum.yer %>
+  </li>
+
+  <li>
+    <strong>Kilo fiyat:</strong>
+    <%= @tohum.kilo_fiyat %>
+  </li>
+
+  <li>
+    <strong>Gecerlilik:</strong>
+    <%= @tohum.gecerlilik %>
+  </li>
+
+</ul>
+
+<span><%= link "Düzenle", to: tohum_path(@conn, :edit, @tohum) %></span>
+<span><%= link "Geri", to: tohum_path(@conn, :index) %></span>

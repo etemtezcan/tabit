@@ -1,0 +1,43 @@
+<h2>Ürün Detayları</h2>
+
+<ul>
+
+  <li>
+    <strong>Cins:</strong>
+    <%= @urun.cins %>
+  </li>
+
+  <li>
+    <strong>Açıklama:</strong>
+    <%= @urun.açıklama %>
+  </li>
+
+  <li>
+    <strong>Yer:</strong>
+    <%= @urun.yer %>
+  </li>
+
+  <li>
+    <strong>Miktar ton:</strong>
+    <%= @urun.miktar_ton %>
+  </li>
+
+  <li>
+    <strong>Kilo fiyat:</strong>
+    <%= @urun.kilo_fiyat %>
+  </li>
+
+  <li>
+    <strong>Uretim tarihi:</strong>
+    <%= @urun.uretim_tarihi %>
+  </li>
+
+  <li>
+    <strong>Gecerlilik:</strong>
+    <%= @urun.gecerlilik %>
+  </li>
+
+</ul>
+
+<span><%= link "Düzenle", to: urun_path(@conn, :edit, @urun) %></span>
+<span><%= link "Geri", to: urun_path(@conn, :index) %></span>

@@ -1,0 +1,38 @@
+<h2>Gübreler Listem</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Ad</th>
+      <th>Makro</th>
+      <th>Mikro</th>
+      <th>Kilo</th>
+      <th>Yer</th>
+      <th>Kilo fiyat</th>
+      <th>Gecerlilik</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for gubre <- @gubreler do %>
+    <tr>
+      <td><%= gubre.ad %></td>
+      <td><%= gubre.makro %></td>
+      <td><%= gubre.mikro %></td>
+      <td><%= gubre.kilo %></td>
+      <td><%= gubre.yer %></td>
+      <td><%= gubre.kilo_fiyat %></td>
+      <td><%= gubre.gecerlilik %></td>
+
+      <td class="text-right">
+        <span><%= link "Göster", to: gubre_path(@conn, :show, gubre), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: gubre_path(@conn, :edit, gubre), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: gubre_path(@conn, :delete, gubre), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Gübre", to: gubre_path(@conn, :new) %></span>

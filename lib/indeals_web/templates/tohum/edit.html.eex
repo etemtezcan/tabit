@@ -1,0 +1,5 @@
+<h2>Tohum Düzenle</h2>
+
+<%= render "form.html", Map.put(assigns, :action, tohum_path(@conn, :update, @tohum)) %>
+
+<span><%= link "Geri", to: tohum_path(@conn, :index) %></span>

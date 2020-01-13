@@ -1,0 +1,5 @@
+<h2>Gübre Düzenle</h2>
+
+<%= render "form.html", Map.put(assigns, :action, gubre_path(@conn, :update, @gubre)) %>
+
+<span><%= link "Geri", to: gubre_path(@conn, :index) %></span>

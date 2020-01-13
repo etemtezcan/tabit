@@ -1,0 +1,53 @@
+<h2>Arazi Detayları</h2>
+
+<ul>
+
+  <li>
+    <strong>Il:</strong>
+    <%= @arazi.il %>
+  </li>
+
+  <li>
+    <strong>Ilce:</strong>
+    <%= @arazi.ilce %>
+  </li>
+
+  <li>
+    <strong>Mahalle:</strong>
+    <%= @arazi.mahalle %>
+  </li>
+
+  <li>
+    <strong>Yuzolcum m2:</strong>
+    <%= @arazi.yuzolcum_m2 %>
+  </li>
+
+  <li>
+    <strong>Kiralik:</strong>
+    <%= @arazi.kiralik %>
+  </li>
+
+  <li>
+    <strong>Satılık:</strong>
+    <%= @arazi.satılık %>
+  </li>
+
+  <li>
+    <strong>Fiyat:</strong>
+    <%= @arazi.fiyat %>
+  </li>
+
+  <li>
+    <strong>Ada pafta:</strong>
+    <%= @arazi.ada_pafta %>
+  </li>
+
+  <li>
+    <strong>Gecerlilik:</strong>
+    <%= @arazi.gecerlilik %>
+  </li>
+
+</ul>
+
+<span><%= link "Düzenle", to: arazi_path(@conn, :edit, @arazi) %></span>
+<span><%= link "Geri", to: arazi_path(@conn, :index) %></span>

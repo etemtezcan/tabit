@@ -82,7 +82,11 @@ defmodule IndealsWeb.Router do
       put "/deals/update/:id", DealController, :update
       post "/deals/update/:id", DealController, :update
       get "/deals/destroy/:id", DealController, :delete
-      
+      resources "/urunler", UrunController
+      resources "/tohumlar", TohumController
+      resources "/gubreler", GubreController
+      resources "/ekipmanlar", EkipmanController
+      resources "/araziler", AraziController
     end
 
     get "/jobs/apply/:id", JobsApplyController, :new

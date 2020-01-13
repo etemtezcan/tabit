@@ -1,0 +1,5 @@
+<h2> Ürün Düzenle</h2>
+
+<%= render "form.html", Map.put(assigns, :action, urun_path(@conn, :update, @urun)) %>
+
+<span><%= link "Geri", to: urun_path(@conn, :index) %></span>

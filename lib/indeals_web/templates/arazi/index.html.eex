@@ -1,0 +1,42 @@
+<h2>Araziler Listem</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Il</th>
+      <th>Ilce</th>
+      <th>Mahalle</th>
+      <th>Yuzolcum m2</th>
+      <th>Kiralik</th>
+      <th>Satılık</th>
+      <th>Fiyat</th>
+      <th>Ada pafta</th>
+      <th>Gecerlilik</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for arazi <- @araziler do %>
+    <tr>
+      <td><%= arazi.il %></td>
+      <td><%= arazi.ilce %></td>
+      <td><%= arazi.mahalle %></td>
+      <td><%= arazi.yuzolcum_m2 %></td>
+      <td><%= arazi.kiralik %></td>
+      <td><%= arazi.satılık %></td>
+      <td><%= arazi.fiyat %></td>
+      <td><%= arazi.ada_pafta %></td>
+      <td><%= arazi.gecerlilik %></td>
+
+      <td class="text-right">
+        <span><%= link "Göster", to: arazi_path(@conn, :show, arazi), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: arazi_path(@conn, :edit, arazi), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: arazi_path(@conn, :delete, arazi), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Arazi", to: arazi_path(@conn, :new) %></span>

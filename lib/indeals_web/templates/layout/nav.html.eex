@@ -16,6 +16,22 @@
           <li class="nav-item">
             <a class="nav-link" href="/deals">  <%= gettext "My Deals"%> </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/urunler">Ürünler </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tohumlar">Tohumlar </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gubreler">Gübreler </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ekipmanlar">Ekipmanlar </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/araziler">Araziler</a>
+          </li>
+          
           <% end %>
           <li class="nav-item">
             <a class="nav-link" href="/about"><%= gettext "About Us"%></a>
@@ -26,7 +42,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/all"><%= gettext "Deals"%></a>
           </li>
+
         </ul>
+        
 
         <ul class="navbar-nav">
           <%= if logged_in?(@conn) do %>
@@ -50,7 +68,6 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="/account"> <%= gettext "Account Settings" %></a>
-                <a class="dropdown-item" href="/deals"> <%= gettext "My Deals"%></a>
                 <a class="dropdown-item" href="/logout"> <%= gettext "Logout"%></a>
               </div>
             </li>

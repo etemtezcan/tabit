@@ -1,0 +1,65 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :il, class: "control-label" %>
+    <%= text_input f, :il, class: "form-control" %>
+    <%= error_tag f, :il %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :ilce, class: "control-label" %>
+    <%= text_input f, :ilce, class: "form-control" %>
+    <%= error_tag f, :ilce %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :mahalle, class: "control-label" %>
+    <%= text_input f, :mahalle, class: "form-control" %>
+    <%= error_tag f, :mahalle %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :yuzolcum_m2, class: "control-label" %>
+    <%= number_input f, :yuzolcum_m2, class: "form-control" %>
+    <%= error_tag f, :yuzolcum_m2 %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :kiralik, class: "control-label" %>
+    <%= checkbox f, :kiralik, class: "checkbox" %>
+    <%= error_tag f, :kiralik %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :satılık, class: "control-label" %>
+    <%= checkbox f, :satılık, class: "checkbox" %>
+    <%= error_tag f, :satılık %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :fiyat, class: "control-label" %>
+    <%= number_input f, :fiyat, class: "form-control" %>
+    <%= error_tag f, :fiyat %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :ada_pafta, class: "control-label" %>
+    <%= text_input f, :ada_pafta, class: "form-control" %>
+    <%= error_tag f, :ada_pafta %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :gecerlilik, class: "control-label" %>
+    <%= date_select f, :gecerlilik, class: "form-control" %>
+    <%= error_tag f, :gecerlilik %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Kaydet", class: "btn btn-primary" %>
+  </div>
+<% end %>
