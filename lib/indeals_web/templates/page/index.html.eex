@@ -2,21 +2,22 @@
   <div class="row">
     <div class="col-md-8 left">
       <div class="jumbotron text-center featured">
-        <h1>Tarım Fırsatına Hoş Geldiniz v.0.5.0 </h1> 
+        <h4>Tarım Fırsatına Hoş Geldiniz v.0.5.0 </h4> 
+      </div>
+    <br/>
+              <br/>
+          
+    <div class="row justify-content-md-center">
+        <a class="nav-link" href="/arazilistele">Ürün İlanları </a>
+        <a class="nav-link" href="/arazilistele">Tohum İlanları </a>
+        <a class="nav-link" href="/arazilistele">Gübre İlanları </a>
+        <a class="nav-link" href="/arazilistele">Ekipman İlanları </a>
+        <a class="nav-link" href="/arazilistele">Arazi İlanları </a>
+        
       </div>
       <div class="content-inner">
-        <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
-          <%= search_input f, :query %>
-          <%= submit "İlan arayın" %>
-          <% end %>
-            <br />
-      </div>
-      <div class="content-inner">
-        <%= form_for @conn, arazi_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
-          <%= search_input f, :query %>
-          <%= submit "Arazi arayın" %>
-          <% end %>
-            <br />
+              <br/>
+      
       </div>
       
     </div>
