@@ -2,19 +2,25 @@
   <div class="row">
     <div class="col-md-8 left">
       <div class="jumbotron text-center featured">
-        <h1><%= gettext "welcome-message"%> </h1> 
+        <h1>Tarım Fırsatına Hoş Geldiniz v.0.5.0 </h1> 
+      </div>
+      <div class="content-inner">
+        <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+          <%= search_input f, :query %>
+          <%= submit "İlan arayın" %>
+          <% end %>
+            <br />
+      </div>
+      <div class="content-inner">
+        <%= form_for @conn, arazi_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+          <%= search_input f, :query %>
+          <%= submit "Arazi arayın" %>
+          <% end %>
+            <br />
       </div>
       
-      <div class="content-inner">
-     <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
-      <%= search_input f, :query %>
-      <%= submit (gettext "Search Deal") %>
-    <% end %>
-        <br />
-      </div>
     </div>
     
     <%= render IndealsWeb.LayoutView, "side.html", assigns %>
-
   </div>
 </div>

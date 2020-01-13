@@ -1,0 +1,29 @@
+<h2> Arazi İlanları </h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th> İl </th>
+      <th>İlçe</th>
+      <th>Mahalle</th>
+      <th>Yüzölçüm</th>
+      <th>Fiyat</th>
+      <th>Geçerlilik</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for arazi <- @araziler do %>
+      <tr>
+        <td><%= arazi.il %></td>
+        <td><%= arazi.ilce %></td>
+        <td><%= arazi.mahalle %></td>
+        <td><%= arazi.yuzolcum_m2 %></td>
+
+          <td><%= arazi.fiyat %></td>
+          <td><%= arazi.gecerlilik %></td>
+          <td></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

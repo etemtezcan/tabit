@@ -38,6 +38,7 @@ defmodule IndealsWeb.Router do
     post "/contact", PageController, :contact_post
     get "/terms", PageController, :terms
     get "/all", DealController, :all  
+    get "/arazilistele", AraziController, :all  
  
 
     # AUTH STUFF

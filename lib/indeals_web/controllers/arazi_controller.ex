@@ -57,4 +57,9 @@ defmodule IndealsWeb.AraziController do
     |> put_flash(:info, "Arazi başarıyla silindi.")
     |> redirect(to: arazi_path(conn, :index))
   end
+  def all(conn, params \\ %{}) do
+      araziler = Tarim.list_araziler()
+      render(conn, "all.html", araziler: araziler)
+  end
+
 end
