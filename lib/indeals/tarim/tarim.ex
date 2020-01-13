@@ -405,6 +405,13 @@ defmodule Indeals.Tarim do
     Repo.all(Arazi)
   end
 
+  def list_araziler(params) do
+    search_term= get_in(params, ["query"])
+    Arazi
+    |> Arazi.search(search_term)
+    |> Repo.all()
+  end
+
   @doc """
   Gets a single arazi.
 

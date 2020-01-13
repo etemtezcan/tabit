@@ -58,8 +58,10 @@ defmodule IndealsWeb.AraziController do
     |> redirect(to: arazi_path(conn, :index))
   end
   def all(conn, params \\ %{}) do
-      araziler = Tarim.list_araziler()
+      araziler = Tarim.list_araziler(params)
       render(conn, "all.html", araziler: araziler)
   end
+
+
 
 end

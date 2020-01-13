@@ -1,5 +1,10 @@
 <h2> Arazi İlanları </h2>
 
+<%= form_for @conn, arazi_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Arazi Ara" %>
+    <% end %>
+
 <table class="table">
   <thead>
     <tr>
