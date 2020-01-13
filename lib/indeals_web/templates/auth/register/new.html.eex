@@ -27,7 +27,7 @@
                 <%= twbs4_error_tag f, :email %>
               </div>
               <div class="form-group">
-                <%= twbs4_text_input_tag f, :mobile, placeholder: "Cep telefonu", type: "mobile" %>
+                <%= twbs4_text_input_tag f, :mobile, placeholder: "Cep telefonu, 05321112233 şeklinde", type: "mobile" %>
                 <%= twbs4_error_tag f, :mobile %>
               </div>
               
