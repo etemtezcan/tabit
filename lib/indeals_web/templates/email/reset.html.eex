@@ -1,12 +1,12 @@
-<p>Hello <%= @user.name %></p>
+<p>Merhaba <%= @user.name %></p>
 
-<p>Looks like you forgot your password, please click the link below to reset it.<br />
+<p>Bu e-postayı şifrenizi sıfırlamanız için gönderiyoruz. <br />
 
-Reset Link:<br />
+Sıfırlamak için tıklayın<br />
 <a href="<%= @reset_url %>"><%= @reset_url %></a>
 <br />
 
-Thank you for using our application!</p>
+Tarım Fırsatını kullandığınız için teşekkür ederiz. </p>
 
-<p>Regards,<br />
-Indeals Team</p>
+<p>Saygılarımızla,<br />
+Tarım Fırsatı</p>

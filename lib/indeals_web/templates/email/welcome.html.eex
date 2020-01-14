@@ -1,12 +1,12 @@
-<p>Hello <%= @user.name %></p>
+<p>Merhaba <%= @user.name %></p>
 
-<p>Click here to confirm your account:<br />
+<p>Hesabınızı doğrulamak için tıklayın<br />
 
-Verify Account:<br />
+<br />
 <a href="<%= @verification_url %>"><%= @verification_url %></a>
 <br />
 
-Thank you for using our application!</p>
+Tarım Fırsatını kullandığınız için teşekkür ederiz. </p>
 
-<p>Regards,<br />
-Indeals Team</p>
+<p>Saygılarımızla,<br />
+Tarım Fırsatı</p>

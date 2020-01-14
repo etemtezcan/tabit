@@ -22,7 +22,9 @@
     <%= render "nav.html", assigns %>
     <div class="container">
     <br><br><br><br><br><br>
+    <br>
     <div class="row justify-content-md-center">
+      
         <a class="nav-link" href="/urunlistele">Ürün İlanları </a>
         <a class="nav-link" href="/tohumlistele">Tohum İlanları </a>
         <a class="nav-link" href="/gubrelistele">Gübre İlanları </a>
@@ -30,8 +32,7 @@
         <a class="nav-link" href="/arazilistele">Arazi İlanları </a>
         
       </div>
-
-    
+<br>
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>

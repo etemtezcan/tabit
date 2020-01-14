@@ -5,7 +5,8 @@ defmodule IndealsWeb.GubreController do
   alias Indeals.Tarim.Gubre
 
   def index(conn, _params) do
-    gubreler = Tarim.list_gubreler()
+    user = Guardian.Plug.current_resource(conn)
+    gubreler = Tarim.list_gubreler_by_user(user.id)
     render(conn, "index.html", gubreler: gubreler)
   end
 

@@ -5,7 +5,8 @@ defmodule IndealsWeb.TohumController do
   alias Indeals.Tarim.Tohum
 
   def index(conn, _params) do
-    tohumlar = Tarim.list_tohumlar()
+    user = Guardian.Plug.current_resource(conn)
+    tohumlar = Tarim.list_tohumlar_by_user(user.id)
     render(conn, "index.html", tohumlar: tohumlar)
   end
 

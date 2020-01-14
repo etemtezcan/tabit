@@ -5,7 +5,8 @@ defmodule IndealsWeb.UrunController do
   alias Indeals.Tarim.Urun
 
   def index(conn, _params) do
-    urunler = Tarim.list_urunler()
+    user = Guardian.Plug.current_resource(conn)
+    urunler = Tarim.list_urunler_by_user(user.id)
     render(conn, "index.html", urunler: urunler)
   end
 

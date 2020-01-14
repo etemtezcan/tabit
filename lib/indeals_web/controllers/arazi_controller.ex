@@ -4,8 +4,10 @@ defmodule IndealsWeb.AraziController do
   alias Indeals.Tarim
   alias Indeals.Tarim.Arazi
 
+
   def index(conn, _params) do
-    araziler = Tarim.list_araziler()
+    user = Guardian.Plug.current_resource(conn)
+    araziler = Tarim.list_araziler_by_user(user.id)
     render(conn, "index.html", araziler: araziler)
   end
 

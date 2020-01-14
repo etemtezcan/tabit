@@ -17,7 +17,7 @@ defmodule IndealsWeb.Auth.LoginController do
         conn
         |> Guardian.Plug.sign_in(user)
         |> put_flash(:info, gettext "You have successfully logged in.")
-        |> redirect(to: "/deals")
+        |> redirect(to: "/")
     end
   end
 

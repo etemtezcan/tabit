@@ -427,7 +427,7 @@ defmodule Indeals.Tarim do
       [%Arazi{}, ...]
 
   """
-  def list_araziler do
+  def list_araziler() do
     Repo.all(Arazi)
   end
 
@@ -526,6 +526,35 @@ defmodule Indeals.Tarim do
     else
        "----"
     end  
+  end
+
+  def list_araziler_by_user(id) do
+    query = from u in Indeals.Tarim.Arazi, where: u.user_id == ^id
+    Repo.all(query)
+  end
+  def list_urunler_by_user(id) do
+    query = from u in Indeals.Tarim.Urun, where: u.user_id == ^id
+    Repo.all(query)
+  end
+  def list_tohumlar_by_user(id) do
+    query = from u in Indeals.Tarim.Tohum, where: u.user_id == ^id
+    Repo.all(query)
+  end
+  def list_ekipmanlar_by_user(id) do
+    query = from u in Indeals.Tarim.Ekipman, where: u.user_id == ^id
+    Repo.all(query)
+  end
+  def list_gubreler_by_user(id) do
+    query = from u in Indeals.Tarim.Gubre, where: u.user_id == ^id
+    Repo.all(query)
+  end
+
+  def scope_by_user(query, user) do
+    if user.is_admin do
+      query
+    else
+      where(query, user_id: ^user.id)
+    end
   end
 
 end

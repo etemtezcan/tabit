@@ -5,7 +5,8 @@ defmodule IndealsWeb.EkipmanController do
   alias Indeals.Tarim.Ekipman
 
   def index(conn, _params) do
-    ekipmanlar = Tarim.list_ekipmanlar()
+    user = Guardian.Plug.current_resource(conn)
+    ekipmanlar = Tarim.list_ekipmanlar_by_user(user.id)
     render(conn, "index.html", ekipmanlar: ekipmanlar)
   end
 
