@@ -2,7 +2,7 @@
 
 <%= form_for @conn, deal_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
       <%= search_input f, :query %>
-      <%= submit "Search" %>
+      <%= submit "İlan Ara" %>
     <% end %>
 
 <table class="table">

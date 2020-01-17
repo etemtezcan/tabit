@@ -1,0 +1,47 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :cins, class: "control-label" %>
+    <%= text_input f, :cins, class: "form-control" %>
+    <%= error_tag f, :cins %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :çeşit, class: "control-label" %>
+    <%= text_input f, :çeşit, class: "form-control" %>
+    <%= error_tag f, :çeşit %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :açıklama, class: "control-label" %>
+    <%= text_input f, :açıklama, class: "form-control" %>
+    <%= error_tag f, :açıklama %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :yer, class: "control-label" %>
+    <%= text_input f, :yer, class: "form-control" %>
+    <%= error_tag f, :yer %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :kilo_fiyat, class: "control-label" %>
+    <%= number_input f, :kilo_fiyat, step: "any", class: "form-control" %>
+    <%= error_tag f, :kilo_fiyat %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :gecerlilik, class: "control-label" %>
+    <%= date_select f, :gecerlilik, class: "form-control", default: {2020, 2, 2} %>
+    <%= error_tag f, :gecerlilik %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Kaydet", class: "btn btn-primary" %>
+  </div>
+<% end %>

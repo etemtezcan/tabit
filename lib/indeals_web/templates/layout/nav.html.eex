@@ -14,19 +14,35 @@
         <ul class="navbar-nav mr-auto">
           <%= if logged_in?(@conn) do %>
           <li class="nav-item">
-            <a class="nav-link" href="/deals">  <%= gettext "My Deals"%> </a>
+            <a class="nav-link" href="/urunler">Ürün </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tohumlar">Tohum </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gubreler">Gübre </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ekipmanlar">Ekipman </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/araziler">Arazi</a>
+          </li>
+          
           <% end %>
           <li class="nav-item">
             <a class="nav-link" href="/about"><%= gettext "About Us"%></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact"><%= gettext "Contact Us"%></a>
+            <a class="nav-link" href="/contact">İrtibat</a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/all"><%= gettext "Deals"%></a>
-          </li>
+          </li> -->
+
         </ul>
+        
 
         <ul class="navbar-nav">
           <%= if logged_in?(@conn) do %>
@@ -50,7 +66,6 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="/account"> <%= gettext "Account Settings" %></a>
-                <a class="dropdown-item" href="/deals"> <%= gettext "My Deals"%></a>
                 <a class="dropdown-item" href="/logout"> <%= gettext "Logout"%></a>
               </div>
             </li>

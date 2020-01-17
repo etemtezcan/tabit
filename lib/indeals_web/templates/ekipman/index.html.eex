@@ -1,0 +1,38 @@
+<h2>Ekipman Listem</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cins</th>
+      <th>Marka</th>
+      <th>Model</th>
+      <th>Özellik</th>
+      <th>Yer</th>
+      <th>Fiyat</th>
+      <th>Gecerlilik</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for ekipman <- @ekipmanlar do %>
+    <tr>
+      <td><%= ekipman.cins %></td>
+      <td><%= ekipman.marka %></td>
+      <td><%= ekipman.model %></td>
+      <td><%= ekipman.özellik %></td>
+      <td><%= ekipman.yer %></td>
+      <td><%= ekipman.fiyat %></td>
+      <td><%= ekipman.gecerlilik %></td>
+
+      <td class="text-right">
+        <span><%= link "Göster", to: ekipman_path(@conn, :show, ekipman), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: ekipman_path(@conn, :edit, ekipman), class: "btn btn-default btn-xs" %></span>
+        <a href="/ekipmanlar/destroy/<%= ekipman.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Ekipman", to: ekipman_path(@conn, :new) %></span>

@@ -1,0 +1,5 @@
+<h2>Ekipman Bilgileri</h2>
+
+<%= render "form.html", Map.put(assigns, :action, ekipman_path(@conn, :update, @ekipman)) %>
+
+<span><%= link "Geri", to: ekipman_path(@conn, :index) %></span>

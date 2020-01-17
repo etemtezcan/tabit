@@ -1,0 +1,35 @@
+<h2> Ekipman İlanları </h2>
+
+<%= form_for @conn, ekipman_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Ekipman Ara" %>
+    <% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th> Cins </th>
+      <th>Marka</th>
+      <th>Model</th>
+      <th>Yer</th>
+      <th>Fiyat</th>
+      <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for ekipman <- @ekipmanlar do %>
+      <tr>
+        <td><%= ekipman.cins %></td>
+        <td><%= ekipman.marka %></td>
+        <td><%= ekipman.model %></td>
+        <td><%= ekipman.yer %></td>
+        <td><%= ekipman.fiyat %></td>
+        <td><%= ekipman.gecerlilik %></td>
+      <td><%= Indeals.Tarim.deal_owner(ekipman.user_id) %></td>
+        
+    </tr>
+  <% end %>
+  </tbody>
+</table>

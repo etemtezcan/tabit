@@ -1,0 +1,38 @@
+<h2>Ürün Listem</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cins</th>
+      <th>Açıklama</th>
+      <th>Yer</th>
+      <th>Miktar ton</th>
+      <th>Kilo fiyat</th>
+      <th>Uretim tarihi</th>
+      <th>Gecerlilik</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for urun <- @urunler do %>
+    <tr>
+      <td><%= urun.cins %></td>
+      <td><%= urun.açıklama %></td>
+      <td><%= urun.yer %></td>
+      <td><%= urun.miktar_ton %></td>
+      <td><%= urun.kilo_fiyat %></td>
+      <td><%= urun.uretim_tarihi %></td>
+      <td><%= urun.gecerlilik %></td>
+
+      <td class="text-right">
+        <span><%= link "Göster", to: urun_path(@conn, :show, urun), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: urun_path(@conn, :edit, urun), class: "btn btn-default btn-xs" %></span>
+        <a href="/urunler/destroy/<%= urun.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+  </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Ürün", to: urun_path(@conn, :new) %></span>

@@ -64,11 +64,12 @@ defmodule Indeals.Account.User do
   @doc false
   def register_changeset(%User{} = user, attrs) do
     user
-    |> cast(attrs, [:name, :username, :email, :password, :password_confirmation, :verification_code])
+    |> cast(attrs, [:name, :username, :email, :password, :password_confirmation, :verification_code, :mobile])
     |> unique_constraint(:email)
     |> unique_constraint(:username)
-    |> validate_required([:name, :username, :email, :password, :password_confirmation])
+    |> validate_required([:name, :username, :email, :password, :password_confirmation, :mobile])
     |> validate_format(:email, ~r/@/)
+    |> validate_format(:mobile, ~r/^(05)[0-9][0-9][1-9]([0-9]){6}$/)
     |> validate_length(:username, min: 3, max: 25)
     |> validate_confirmation(:password)
     |> put_password_hash

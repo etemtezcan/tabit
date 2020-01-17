@@ -1,0 +1,37 @@
+<h2> Gübre İlanları </h2>
+
+<%= form_for @conn, gubre_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Gübre Ara" %>
+    <% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Ad </th>
+      <th>Yer</th>
+      <th>Kilo</th>
+      <th>Kilo Fiyat</th>
+      <th>Makro</th>
+      <th>Mikro</th>
+      <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for gubre <- @gubreler do %>
+      <tr>
+        <td><%= gubre.ad %></td>
+        <td><%= gubre.yer %></td>
+        <td><%= gubre.kilo %></td>
+        <td><%= gubre.kilo_fiyat %></td>
+        <td><%= gubre.makro %></td>
+        <td><%= gubre.mikro %></td>
+        <td><%= gubre.gecerlilik %></td>
+      <td><%= Indeals.Tarim.deal_owner(gubre.user_id) %></td>
+        
+    </tr>
+  <% end %>
+  </tbody>
+</table>

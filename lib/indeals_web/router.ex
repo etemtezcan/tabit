@@ -38,6 +38,11 @@ defmodule IndealsWeb.Router do
     post "/contact", PageController, :contact_post
     get "/terms", PageController, :terms
     get "/all", DealController, :all  
+    get "/arazilistele", AraziController, :all  
+    get "/ekipmanlistele", EkipmanController, :all  
+    get "/urunlistele", UrunController, :all  
+    get "/tohumlistele", TohumController, :all  
+    get "/gubrelistele", GubreController, :all  
  
 
     # AUTH STUFF
@@ -82,7 +87,16 @@ defmodule IndealsWeb.Router do
       put "/deals/update/:id", DealController, :update
       post "/deals/update/:id", DealController, :update
       get "/deals/destroy/:id", DealController, :delete
-      
+      get "/araziler/destroy/:id", AraziController, :delete
+      get "/urunler/destroy/:id", UrunController, :delete
+      get "/tohumlar/destroy/:id", TohumController, :delete
+      get "/gubreler/destroy/:id", GubreController, :delete
+      get "/ekipmanlar/destroy/:id", EkipmanController, :delete
+      resources "/araziler", AraziController
+      resources "/urunler", UrunController
+      resources "/tohumlar", TohumController
+      resources "/gubreler", GubreController
+      resources "/ekipmanlar", EkipmanController
     end
 
     get "/jobs/apply/:id", JobsApplyController, :new

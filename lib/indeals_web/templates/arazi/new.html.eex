@@ -1,0 +1,5 @@
+<h2>Yeni Arazi</h2>
+
+<%= render "form.html", Map.put(assigns, :action, arazi_path(@conn, :create)) %>
+
+<span><%= link "Geri", to: arazi_path(@conn, :index) %></span>

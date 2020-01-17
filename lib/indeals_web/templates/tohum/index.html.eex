@@ -1,0 +1,36 @@
+<h2>Tohum Listem</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cins</th>
+      <th>Çeşit</th>
+      <th>Açıklama</th>
+      <th>Yer</th>
+      <th>Kilo fiyat</th>
+      <th>Gecerlilik</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tohum <- @tohumlar do %>
+    <tr>
+      <td><%= tohum.cins %></td>
+      <td><%= tohum.çeşit %></td>
+      <td><%= tohum.açıklama %></td>
+      <td><%= tohum.yer %></td>
+      <td><%= tohum.kilo_fiyat %></td>
+      <td><%= tohum.gecerlilik %></td>
+
+      <td class="text-right">
+        <span><%= link "Göster", to: tohum_path(@conn, :show, tohum), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Düzenle", to: tohum_path(@conn, :edit, tohum), class: "btn btn-default btn-xs" %></span>
+         <a href="/tohumlar/destroy/<%= tohum.id %>" onclick="return confirm('Emin misiniz?')" class="btn btn-danger btn-xs"> Sil </a>
+ </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "Yeni Tohum", to: tohum_path(@conn, :new) %></span>

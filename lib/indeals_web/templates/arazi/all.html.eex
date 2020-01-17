@@ -1,0 +1,37 @@
+<h2> Arazi İlanları </h2>
+
+<%= form_for @conn, arazi_path(@conn, :all), [method: :get, class: "pull-right"], fn f -> %>
+      <%= search_input f, :query %>
+      <%= submit "Arazi Ara" %>
+    <% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th> İl </th>
+      <th>İlçe</th>
+      <th>Mahalle</th>
+      <th>Yüzölçüm</th>
+      <th>Fiyat</th>
+      <th>Geçerlilik</th>
+      <th>İlan Telefonu</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+<%= for arazi <- @araziler do %>
+      <tr>
+        <td><%= arazi.il %></td>
+        <td><%= arazi.ilce %></td>
+        <td><%= arazi.mahalle %></td>
+        <td><%= arazi.yuzolcum_m2 %></td>
+
+          <td><%= arazi.fiyat %></td>
+          <td><%= arazi.gecerlilik %></td>
+          <td><%= Indeals.Tarim.deal_owner(arazi.user_id) %></td>
+    
+          <td></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
