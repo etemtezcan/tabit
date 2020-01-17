@@ -1,4 +1,6 @@
-# CoderJobs
+# Indeals branch version 2 , tabit'e yollanan
+# version3 yeni development
+
 
 A job board application using Phoenix Framework
 
