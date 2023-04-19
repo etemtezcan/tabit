@@ -39,8 +39,8 @@ config :guardian_db, GuardianDb,
 # In your config/config.exs file
 config :indeals, Indeals.Mailer,
   adapter: Bamboo.MailgunAdapter,
-  api_key: "key-efe84ffffb5c5a6d1ef9312bfb4f774b",
-  domain: "mg.rasteda.com"
+  api_key: "",
+  domain: ""
 
   # adapter: Bamboo.SMTPAdapter,
  #  server: System.get_env("SMTP_HOST"),
